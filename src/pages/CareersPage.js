@@ -1,9 +1,14 @@
+import {useEffect} from 'react';
 import React from 'react'
 import Careers from '../components/Careers'
 import LandingInstance from '../components/LandingInstance'
 import PageHeader from '../components/PageHeader'
 
 const CareersPage = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
   const documentHeading = document.getElementById('documentHeading')
   documentHeading.innerHTML = 'Careers | Scapes & Surveys'
 

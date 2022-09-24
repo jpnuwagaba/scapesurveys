@@ -1,3 +1,4 @@
+import {useEffect, useState} from 'react';
 import './App.css';
 import AboutUs from './components/AboutUs';
 import ClientSection from './components/ClientSection';
@@ -21,10 +22,15 @@ import GIS from './pages/GIS';
 import LandDevelopment from './pages/LandDevelopment'
 import UAV from './pages/UAV'
 import LaserScanning from './pages/LaserScanning';
-import UtilityMapping from './pages/UtilityMapping';
+import UtilityMapping from './pages/UtilityMapping'; 
 
 
 function App() {
+  
+
+  // useEffect(() => {
+  //   window.scrollTo(0, 0)
+  // }, [])
 
   return (
     <Router>

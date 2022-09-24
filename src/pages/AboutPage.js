@@ -5,6 +5,7 @@ import PageHeader from '../components/PageHeader'
 import TextSection from '../components/TextSection'
 
 const AboutPage = () => {
+  
   const documentHeading = document.getElementById('documentHeading')
   documentHeading.innerHTML = 'About Us | Scapes & Surveys'
 
