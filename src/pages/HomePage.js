@@ -8,6 +8,9 @@ import Projects from '../components/Projects'
 import Services from '../components/Services'
 import ProjectPage from './ProjectPage'
 import LandingInstance from '../components/LandingInstance'
+import Collapsible from 'react-collapsible'
+import CollapsibleMenu from '../components/CollapsibleMenu'
+
 
 const HomePage = () => {
   const documentHeading = document.getElementById('documentHeading')

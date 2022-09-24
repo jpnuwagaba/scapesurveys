@@ -3,6 +3,8 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import Menu from './Menu'
 import MenuBtn from './MenuBtn'
+import Collapsible from 'react-collapsible'
+import CollapsibleMenu from '../components/CollapsibleMenu'
 
 const Navbar = () => {
 
@@ -29,12 +31,15 @@ const Navbar = () => {
             <li className='mini-txt'>Plot 50/60 Kampala Road</li>
           </ul>
         </div>
-        <div onClick={() => setShowmenu(!showMenu)} className="menu-icon show-on-small">
+        <div className="menu-icon show-on-small">
+        <CollapsibleMenu />
+        </div>
+        {/* <div onClick={() => setShowmenu(!showMenu)} className="menu-icon show-on-small">
           <MenuBtn />
         </div>
         <div style={{display: showMenu ? 'initial' : 'none'}}  className='menu'>
           <Menu />
-        </div>
+        </div> */}
       </div>
     </nav>
   )
