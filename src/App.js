@@ -8,7 +8,7 @@ import Navbar from './components/Navbar';
 import Projects from './components/Projects';
 import Contact from './components/Contact'
 import Services from './components/Services';
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, ScrollRestoration } from "react-router-dom";
 
 // includes pages
 import HomePage from './pages/HomePage'
@@ -23,6 +23,7 @@ import LandDevelopment from './pages/LandDevelopment'
 import UAV from './pages/UAV'
 import LaserScanning from './pages/LaserScanning';
 import UtilityMapping from './pages/UtilityMapping'; 
+import ScrollToTop from './components/ScrollToTop';
 
 
 function App() {
@@ -34,6 +35,7 @@ function App() {
 
   return (
     <Router>
+      <ScrollToTop />
       <Navbar />
       <div className="main-page-content">
         <Routes>

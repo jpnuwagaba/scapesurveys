@@ -9,33 +9,38 @@ const Careers = () => {
         <div className="careers-grid">
         <Career 
             career='Cadastral Surveyor'
-            careerDesc='Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium culpa excepturi accusantium blanditiis. Possimus neque numquam reprehenderit doloremque explicabo dolore veritatis deserunt odit consectetur? Necessitatibus deleniti sunt officia, provident quaerat quod quo. Modi amet mollitia voluptatibus error! Perspiciatis, exercitationem vitae?'
-            img='land-surveying.jpg'
+            careerImg='map.png'
             workingHours='Full time'
+            location='Kampala, Uganda'
+            duration='Since January 2021'
         />
         <Career 
             career='Engineering Surveyor'
-            careerDesc='Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium culpa excepturi accusantium blanditiis. Possimus neque numquam reprehenderit doloremque explicabo dolore veritatis deserunt odit consectetur? Necessitatibus deleniti sunt officia, provident quaerat quod quo. Modi amet mollitia voluptatibus error! Perspiciatis, exercitationem vitae?'
-            img='engineering.jpg'
+            careerImg='total-station.png'
             workingHours='Full time'
+            location='Kampala, Uganda'
+            duration='Since January 2021'
         />
         <Career 
             career='GIS Analyst'
-            careerDesc='Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium culpa excepturi accusantium blanditiis. Possimus neque numquam reprehenderit doloremque explicabo dolore veritatis deserunt odit consectetur? Necessitatibus deleniti sunt officia, provident quaerat quod quo. Modi amet mollitia voluptatibus error! Perspiciatis, exercitationem vitae?'
-            img='gis.png'
+            careerImg='/landing-icons/gis.png'
             workingHours='Full time'
+            location='Kampala, Uganda'
+            duration='Since May 2022'
         />
         <Career 
             career='Internship Trainee'
-            careerDesc='Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium culpa excepturi accusantium blanditiis. Possimus neque numquam reprehenderit doloremque explicabo dolore veritatis deserunt odit consectetur? Necessitatibus deleniti sunt officia, provident quaerat quod quo. Modi amet mollitia voluptatibus error! Perspiciatis, exercitationem vitae?'
-            img='land-surveying.jpg'
+            careerImg='internship.png'
             workingHours='Full time'
+            location='Kampala, Uganda'
+            duration='Since January 2021'
         />
         <Career 
             career='Cartographer'
-            careerDesc='Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium culpa excepturi accusantium blanditiis. Possimus neque numquam reprehenderit doloremque explicabo dolore veritatis deserunt odit consectetur? Necessitatibus deleniti sunt officia, provident quaerat quod quo. Modi amet mollitia voluptatibus error! Perspiciatis, exercitationem vitae?'
-            img='land-surveying.jpg'
+            careerImg='map (1).png'
             workingHours='Full time'
+            location='Kampala, Uganda'
+            duration='Since January 2021'
         />
         </div>
     </div>

@@ -12,7 +12,7 @@ const Services = () => {
           servicepage='engineeringcadastral'
         />
         <Service 
-          service='GIS Consulting'
+          service='GIS Consulting & Surveying'
           img='./img/landing-icons/earth-africa-solid.svg'
           servicepage='gis'
         />

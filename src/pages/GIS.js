@@ -1,3 +1,4 @@
+
 import React from 'react'
 import PageHeader from '../components/PageHeader'
 
@@ -8,7 +9,7 @@ const GIS = () => {
   return (
     <div>
       <PageHeader
-        pageHeading='GIS Consulting'
+        pageHeading='GIS Consulting & Surveying'
         briefDesc='Working with us will not leave you the same - From mentorships to career development, Scapes and Surveys is building a broad and socially inclusive home-based and overseas work force to up the levels of industry service.'
         img='gis.png'
       />

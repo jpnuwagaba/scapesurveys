@@ -17,7 +17,7 @@ const HomePage = () => {
   return (
     <div>
         <LandingInstance
-          bgImg='surveyor-img.jpg'
+          bgImg='nms.jpeg'
           preHeader='Consistent & Accurate'
           landingCaptionHeader='Best Solutions for your Surveys'
           InfoSectionLinkName='See Company Brochure'

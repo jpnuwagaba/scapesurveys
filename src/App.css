@@ -159,6 +159,11 @@ h3 {
 }
 
 
+.list-head {
+  margin-top: 1rem;
+}
+
+
 /* PAGE HEADER */
 .page-header {
   margin: 3rem auto;
@@ -185,6 +190,7 @@ h3 {
   height: 50vh;
   border-radius: 5px;
 }
+
 
 /* NAVIGATION */
 .navbar {
@@ -231,6 +237,7 @@ h3 {
   border-radius: 7px;
   width: 100%;
   display: grid;
+  box-shadow: 0 0 5px rgb(207, 207, 207);
   gap: 40px;
 }
 
@@ -519,7 +526,7 @@ h3 {
 
 .careers-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 40px;
 }
 
@@ -555,6 +562,20 @@ h3 {
   position: absolute;
   right: 0;
   bottom: 0;
+}
+
+.career-img img {
+  width: 50px;
+}
+
+.career-grid {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.duration {
+  font-style: i;
 }
 
 /* TEAM */
@@ -663,8 +684,8 @@ footer {
   gap: 70px;
 }
 
-.main-list,
-.mini-txt {
+.footer-container .main-list,
+.footer-container .mini-txt {
   margin: 2rem 0;
 }
 
@@ -772,6 +793,10 @@ footer {
     gap: 30px;
   }
 
+  .careers-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
 }
 
 @media(max-width: 800px) {
@@ -815,6 +840,9 @@ footer {
 }
 
 @media(max-width: 500px) {
+  .page-header {
+  }
+
   .page-header-inner {
     grid-template-columns: 1fr;
     gap: 0;

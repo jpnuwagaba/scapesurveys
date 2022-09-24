@@ -16,7 +16,7 @@ const CareersPage = () => {
     <div>
       <PageHeader
         pageHeading='Careers at Scapes & Surveys'
-        briefDesc='Working with us will not leave you the same - From mentorships to career development, Scapes and Surveys is building a broad and socially inclusive home-based and overseas work force to up the levels of industry service.'
+        briefDesc='Working with us will not leave you the same - From mentorships to career development, Scapes and Surveys is building a broad and socially inclusive home-based and overseas work force to up the levels of industry service. Send us an email today!'
         img='workforus.jpg'
       />
       <Careers />

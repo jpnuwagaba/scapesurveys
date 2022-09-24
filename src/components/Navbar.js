@@ -20,7 +20,7 @@ const Navbar = () => {
             <li><Link className='bold' to="/about">About Us</Link></li>
             <li><Link className='bold' to="/services">Services</Link></li>
             <li><Link className='bold' to="/projects">Projects</Link></li>
-            <li><Link onClick={() => setShowmenu(!showMenu)}  className='bold' to="careers">Careers</Link></li>
+            <li><Link className='bold' to="careers">Careers</Link></li>
           </ul>
         </div>
         <div className="nav-right hide-on-small">
