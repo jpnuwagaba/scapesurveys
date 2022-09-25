@@ -6,10 +6,7 @@ import Corevalues from '../components/Corevalues'
 import InfoSection from '../components/InfoSection'
 import Projects from '../components/Projects'
 import Services from '../components/Services'
-import ProjectPage from './ProjectPage'
 import LandingInstance from '../components/LandingInstance'
-import Collapsible from 'react-collapsible'
-import CollapsibleMenu from '../components/CollapsibleMenu'
 
 
 const HomePage = () => {

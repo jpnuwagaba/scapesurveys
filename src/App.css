@@ -94,6 +94,10 @@ h3 {
   padding: 10%;
 }
 
+.info-section-right {
+  height: auto;
+}
+
 .info-section:hover .info-section-left {
   background: #1e2867;
 }
@@ -401,6 +405,66 @@ h3 {
   text-align: left;
 }
 
+.collapsibleServices-label {
+  cursor: pointer;
+}
+
+.collapsibleServices-content ul  {
+  display: flex;
+  flex-direction: column;
+  width: 400%;
+  padding: 1rem;
+  position: absolute;
+  top: 200%;
+  background: #fff;
+  border-bottom: solid #2b388f;
+  border-top: solid #2b388f;
+}
+
+.collapsibleServices-content .bold:hover {
+  color: #2b388f;
+}
+
+.collapsibleServices-flex svg {
+  width: 10px;
+}
+
+.collapsibleServices-flex {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.collapsibleServicesMenu-label {
+  cursor: pointer;
+}
+
+.collapsibleServicesMenu-content ul  {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 1rem;
+  position: absolute;
+  top: 100%;
+  background: #fff;
+  border-bottom: solid #2b388f;
+}
+
+.collapsibleServicesMenu-content .bold:hover {
+  color: #2b388f;
+}
+
+.collapsibleServicesMenu-flex svg {
+  width: 10px;
+}
+
+.collapsibleServicesMenu-flex {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+
 /* CORE VALUES */
 .core-values {
   display: grid;
@@ -591,48 +655,37 @@ h3 {
 }
 
 /* CONTACT */
-.contact-and-location {
-  text-align: left;
+.contact-and-loation {
+  background: #2b388f;
+  color: #eee;
+  padding: 3rem 0;
+}
+
+.social-list {
   display: flex;
+  align-items: center;
 }
 
-.contact-form {
-  align-items: baseline;
-  border-right: solid #eee;
-}
-
-.contact-form {
-  padding-right: 2rem;
-}
-
-.contact-form .social-list div {
-  display: flex;
-  align-items: baseline;
-}
-
-.contact-form .social-list div li svg {
+.social-list svg {
+  width: 18px;
+  margin-right: 20px;
   fill: #eee;
-  width: 20px;
 }
-
-.contact-form .social-list div li {
-  margin-right: 25px;
-}
-
-.contact-form .social-list div li svg:hover {
-  fill: rgba(238, 238, 238, 0.548);
-}
-
-.contact-form button {
-  font-size: 13px;
-}
-
 .location-part {
-  padding-left: 2rem;
+  display: grid;
+  gap: 40px;
 }
 
-.location-img {
+.contact-and-location-grid {
+  display: grid;
+  grid-template-columns: 40% auto;
+  gap: 40px;
+}
+
+.map {
   background: url(../public/img/fraine.jfif) no-repeat center/cover;
+  height: 270px;
+  border-radius: 5px;
 }
 
 /* FOOTER */
@@ -642,6 +695,7 @@ footer {
 }
 
 .footer-container {
+  padding: 3rem 0 0 0;
   display: grid;
   grid-template-columns: 10% auto;
   justify-content: space-between;
@@ -876,6 +930,7 @@ footer {
     grid-template-columns: 1fr;
   }
 
+
   .services {
     grid-template-columns: 1fr;
     gap: 0;
@@ -906,6 +961,10 @@ footer {
   }
 
   .careers-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-and-location-grid {
     grid-template-columns: 1fr;
   }
 

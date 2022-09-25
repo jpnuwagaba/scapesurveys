@@ -1,13 +1,6 @@
-import {useEffect, useState} from 'react';
 import './App.css';
-import AboutUs from './components/AboutUs';
-import ClientSection from './components/ClientSection';
 import Footer from './components/Footer';
-import InfoSection from './components/InfoSection';
 import Navbar from './components/Navbar';
-import Projects from './components/Projects';
-import Contact from './components/Contact'
-import Services from './components/Services';
 import { BrowserRouter as Router, Routes, Route, ScrollRestoration } from "react-router-dom";
 
 // includes pages
