@@ -75,7 +75,7 @@ li {
 .blue-btn:hover, .white-btn:hover {
   background: var(--green);
   color: #333;
-  transform: translateY(-3px);
+  /* transform: translateY(-3px); */
   transition: all ease-in-out 300ms;
 }
 
