@@ -1,5 +1,12 @@
 
 /* UTILITY CLASSES */
+:root {
+  --blue: #2b388f;
+  --darkblue: #202a68;
+  --brown: #603813;
+  --green: #65cb74;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -10,6 +17,7 @@ html,
 body {
   font-size: 18px;
   scroll-behavior: smooth;
+  /* background: #EEF4F7; */
 }
 
 .container {
@@ -47,9 +55,28 @@ li {
   margin: 1rem 0;
 }
 
-.blue-btn {
-  background: #2b388f;
+.blue-btn1 {
+  padding: 12px 18px;
+  font-size: 17px;
+  font-family: 'DM Sans', sans-serif;
+  text-transform: uppercase;
+  background: var(--blue);
   color: #eee;
+  border: none;
+  border-radius: 5px;
+  margin: 1rem 0;
+}
+
+.blue-btn {
+  background: var(--blue);
+  color: #eee;
+}
+
+.blue-btn:hover, .white-btn:hover {
+  background: var(--green);
+  color: #333;
+  transform: translateY(-3px);
+  transition: all ease-in-out 300ms;
 }
 
 .link-icon {
@@ -89,7 +116,7 @@ h3 {
   display: grid;
   justify-content: space-between;
   text-align: left;
-  background: #2b388f;
+  background: var(--blue);
   color: #eee;
   padding: 10%;
 }
@@ -99,7 +126,7 @@ h3 {
 }
 
 .info-section:hover .info-section-left {
-  background: #1e2867;
+  background: var(--darkblue);
 }
 
 .main-page-content {
@@ -130,7 +157,7 @@ h3 {
 
 /* COLLAPSIBLE */
 .dropdown-label {
-  color: #2b388f;
+  color: var(--blue);
 }
 .dropdown-content {
   position: absolute;
@@ -139,7 +166,7 @@ h3 {
   background: #fff;
   padding: 2rem;
   width: 82vw ;
-  border: #2b388f solid 1px;
+  border: var(--blue) solid 1px;
   border-radius: 10px;
   display: grid;
   gap: 60px;
@@ -155,7 +182,7 @@ h3 {
 }
 
 .menu-footer {
-  border-top: #2b388f solid 1px;
+  border-top: var(--blue) solid 1px;
   padding: 1rem 0;
 }
 
@@ -178,7 +205,7 @@ h3 {
 }
 
 .page-heading {
-  color: #2b388f;
+  color: var(--blue);
   /* border-bottom: #2b388f solid 7px; */
 }
 
@@ -301,7 +328,7 @@ h3 {
 
 .aboutUs-left-text {
   color: #f2f2f2;
-  background: #2b388f;
+  background: var(--blue);
   padding: 2rem;
   text-align: left;
 }
@@ -313,7 +340,7 @@ h3 {
   text-align: center;
   background: #eee;
   padding: 2rem;
-  border-bottom: 5px solid #2b388f;
+  border-bottom: 5px solid var(--blue);
 }
 
 .aboutUs-right h2 {
@@ -387,7 +414,7 @@ h3 {
 
 .fullscreen {
   margin: 0 auto 3rem;
-  background: #2b388f;
+  background: var(--blue);
   color: #eee;
 }
 
@@ -417,12 +444,12 @@ h3 {
   position: absolute;
   top: 200%;
   background: #fff;
-  border-bottom: solid #2b388f;
-  border-top: solid #2b388f;
+  border-bottom: solid var(--blue);
+  border-top: solid var(--blue);
 }
 
 .collapsibleServices-content .bold:hover {
-  color: #2b388f;
+  color: var(--blue);
 }
 
 .collapsibleServices-flex svg {
@@ -447,11 +474,11 @@ h3 {
   position: absolute;
   top: 100%;
   background: #fff;
-  border-bottom: solid #2b388f;
+  border-bottom: solid var(--blue);
 }
 
 .collapsibleServicesMenu-content .bold:hover {
-  color: #2b388f;
+  color: var(--blue);
 }
 
 .collapsibleServicesMenu-flex svg {
@@ -534,7 +561,7 @@ h3 {
 }
 
 .project:hover {
-  background: #2b388f;
+  background: var(--blue);
   color: #eee;
   transition: all ease-in-out 400ms;
 }
@@ -567,11 +594,11 @@ h3 {
 }
 
 .career h3 {
-  color: #2b388f;
+  color: var(--blue);
 }
 
 .separator {
-  background: #37b34a;
+  background: var(--green);
   height: 5px;
   width: 80px;
   margin-bottom: 1rem;
@@ -582,7 +609,7 @@ h3 {
 }
 
 .working-hours {
-  background: #2b388f;
+  background: var(--blue);
   display: inline-block;
   color: #eee;
   padding: 0.4rem;
@@ -627,7 +654,7 @@ h3 {
   display: grid;
   grid-template-columns: 30% auto;
   background: #eee;
-  border-right: solid 5px #2b388f;
+  border-right: solid 5px var(--blue);
   height: 190px;
 }
 
@@ -656,7 +683,7 @@ h3 {
 
 /* CONTACT */
 .contact-and-loation {
-  background: #2b388f;
+  background: var(--blue);
   color: #eee;
   padding: 3rem 0;
 }
@@ -679,14 +706,8 @@ h3 {
 .contact-and-location-grid {
   display: grid;
   grid-template-columns: 40% auto;
-  gap: 40px;
 }
 
-.map {
-  background: url(../public/img/fraine.jfif) no-repeat center/cover;
-  height: 270px;
-  border-radius: 5px;
-}
 
 /* FOOTER */
 footer {
@@ -844,12 +865,19 @@ footer {
     width: 80px;
   }
 
+  
   .footer-container {
+    grid-template-columns: 1fr;
     gap: 0;
   }
 
   .footer-right .main-list div {
     gap: 10px;
+  }
+
+  .contact-and-location-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
   }
 
   h1 {
@@ -952,19 +980,12 @@ footer {
     grid-template-columns: 1fr;
   }
 
-  .footer-container {
-    grid-template-columns: 1fr;
-  }
 
   .career {
     grid-template-columns: 1fr;
   }
 
   .careers-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .contact-and-location-grid {
     grid-template-columns: 1fr;
   }
 

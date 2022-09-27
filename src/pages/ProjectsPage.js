@@ -40,7 +40,7 @@ const ProjectsPage = () => {
         />
         <Project
           projectServiceCategory='Engineering Surveying'
-          projectName='Dorit Airport, Dorit, South Sudan'
+          projectName='Torit Airport, Torit, South Sudan'
           projectDate='May 23, 2022'
           img='energy.jpg'
         />
@@ -51,10 +51,10 @@ const ProjectsPage = () => {
           img='mak.jpg'
         />
         <Project
-          projectServiceCategory='UAV Mapping'
-          projectName='Isingiro Drone Project'
+          projectServiceCategory='Topographic Survey'
+          projectName='National Medical Stores'
           projectDate='May 23, 2022'
-          img='drone.jpg'
+          img='nms.jpeg'
         />
         <Project
           projectServiceCategory='Cadastral Surveying'

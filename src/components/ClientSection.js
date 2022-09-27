@@ -4,7 +4,7 @@ const ClientSection = () => {
   return (
     <div className='container client-section'>
         <div className="client-section-header">
-            <button className="btn blue-btn">clients that trust us</button>
+            <button className="blue-btn1">clients that trust us</button>
         </div>
         <div className="company-logos">
             <img className='company-logo' src="./img/mlhud.png" alt="" srcset="" />
