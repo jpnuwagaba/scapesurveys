@@ -374,7 +374,7 @@ h3 {
 .service {
   background: #eee;
   padding: 2rem;
-  height: auto;
+  height: 250px;
   border-radius: 5px;
 }
 
@@ -698,6 +698,12 @@ h3 {
   margin-right: 20px;
   fill: #eee;
 }
+
+.social-list svg:hover {
+  fill: var(--green);
+  transition: all ease-in-out 300ms;
+}
+
 .location-part {
   display: grid;
   gap: 40px;
@@ -739,7 +745,9 @@ footer {
 }
 
 .footer-right .main-list div li a:hover {
-  border-bottom: #333 solid 1px;
+  color: var(--green);
+  transition: all ease-in-out 300ms;
+  /* border-bottom: #333 solid 1px; */
 }
 
 .footer-left img {

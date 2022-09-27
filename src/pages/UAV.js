@@ -10,7 +10,7 @@ const GIS = () => {
       <PageHeader
         pageHeading='UAV Lidar Scanning & Aerial Mapping services'
         briefDesc='Working with us will not leave you the same - From mentorships to career development, Scapes and Surveys is building a broad and socially inclusive home-based and overseas work force to up the levels of industry service.'
-        img='drone.jpg'
+        img='drone-surveying.jpg'
       />
     </div>
   )
