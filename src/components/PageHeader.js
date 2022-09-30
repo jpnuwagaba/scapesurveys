@@ -11,7 +11,7 @@ const PageHeader = (props) => {
           {/* <p>{props.briefDesc}</p> */}
         </div>
       </div>
-      <div style={{ backgroundImage: `url(../img/${props.img}`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover', backgroundPosition: 'center' }} className="page-header-img"></div>
+      {/* <div style={{ backgroundImage: `url(../img/${props.img}`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover', backgroundPosition: 'center' }} className="page-header-img"></div> */}
     </div>
   )
 }

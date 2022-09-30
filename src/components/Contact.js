@@ -1,6 +1,6 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import Map from '../components/Map'
+import Logo from './Logo'
 
 
 const Contact = () => {
@@ -8,14 +8,13 @@ const Contact = () => {
     <div className='contact-and-loation'>
       <div className="container">
         <div className="contact-and-location-grid">
-
           <div className="location-part">
+            <Logo />
             <div>
               <h3>Our Location</h3>
               <p>Floor above Fraine Supermarket, Ntinda</p>
               <p>P.O Box. 7096, Kampala Uganda</p>
             </div>
-            {/* <hr style={{ width: `70%` }} /> */}
             <div>
               <h3>Follow Scapes & Surveys Associates</h3>
               <div className="social-list">

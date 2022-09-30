@@ -25,6 +25,7 @@ const HomePage = () => {
         />
         <AboutUs />
         <ClientSection />
+        <h1 className='container'>Our Services</h1>
         <Services />
         <Corevalues />
         <InfoSection 
@@ -34,6 +35,7 @@ const HomePage = () => {
             img='energy.jpg'
             link='projects'
         />
+        <h1 className='container'>Our Recent Projects</h1>
         <Projects />
         <InfoSection 
             InfoSectionHeading='Careers at Scapes and Surveys'

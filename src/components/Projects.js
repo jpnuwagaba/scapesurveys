@@ -5,11 +5,6 @@ import { Link } from 'react-router-dom'
 const Projects = () => {
   return (
     <div className='projects container'>
-      <div className="project-header">
-        <div>
-          <h1>Our Recent Projects</h1>
-        </div>
-      </div>
       <div className='projects-container'>
         <Project
           projectServiceCategory='UAV Mapping'

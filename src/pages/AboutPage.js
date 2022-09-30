@@ -12,7 +12,7 @@ const AboutPage = () => {
   return (
     <div>
       <PageHeader 
-        pageHeading='Our History'
+        pageHeading='About Us'
         briefDesc='Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, id quaerat! Nulla sapiente culpa suscipit, minus earum a eum. Accusantium repellat sunt et eveniet impedit.'
         img='company-team.jpg'
       />

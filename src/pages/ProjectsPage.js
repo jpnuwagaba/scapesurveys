@@ -16,12 +16,7 @@ const ProjectsPage = () => {
         briefDesc='Our projects cover areas of  cadastral surveys, engineering surveys, land development services, GIS consulting, UAV Lidar Scanning & Aerial Mapping, 3D laser scanning and Utiliy Mapping.'
         img='energy.jpg'
       />
-    <div className='projects container'>      
-      <div className="project-header">
-        <div>
-          <h1>Our Recent Projects</h1>
-        </div>
-      </div>
+    <div className='projects container'>
       <div className='projects-container'>
         <Project
           projectServiceCategory='UAV Mapping'
@@ -51,7 +46,7 @@ const ProjectsPage = () => {
           projectServiceCategory='Topographic Survey'
           projectName='National Medical Stores'
           projectDate='May 23, 2022'
-          img='nms.jpeg'
+          img='engineering.jpg'
         />
         <Project
           projectServiceCategory='Cadastral Surveying'
