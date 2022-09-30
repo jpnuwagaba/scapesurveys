@@ -24,21 +24,9 @@ const Navbar = () => {
             <li><Link className='bold' to="careers">Careers</Link></li>
           </ul>
         </div>
-        <div className="nav-right hide-on-small">
-          <ul>
-            <li className='mini-txt'><span>+256 782388113</span></li>
-            <li className='mini-txt'>Plot 50/60 Kampala Road</li>
-          </ul>
-        </div>
         <div className="menu-icon show-on-small">
           <CollapsibleMenu />
         </div>
-        {/* <div onClick={() => setShowmenu(!showMenu)} className="menu-icon show-on-small">
-          <MenuBtn />
-        </div>
-        <div style={{display: showMenu ? 'initial' : 'none'}}  className='menu'>
-          <Menu />
-        </div> */}
       </div>
     </nav>
   )

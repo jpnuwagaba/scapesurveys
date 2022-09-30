@@ -21,9 +21,6 @@ const ProjectsPage = () => {
         <div>
           <h1>Our Recent Projects</h1>
         </div>
-        <div>
-        <Link to="/projects"><button className="btn blue-btn">SEE MORE</button></Link>
-        </div>
       </div>
       <div className='projects-container'>
         <Project
@@ -74,7 +71,7 @@ const ProjectsPage = () => {
           projectDate='May 23, 2022'
           img='3d-scanning.jpg'
         />
-      </div>
+      </div>       
     </div>
     </>
   )

@@ -1,9 +1,10 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Project = (props) => {
   return (
     <div>
-      <a href="#">
+      <Link to="/utilitypage">
       <div className='project'>
         <div style={{ backgroundImage: `url(../img/${props.img}`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }} className="project-img">
           <p className="mini-text project-service-category bold">{props.projectServiceCategory}</p>
@@ -13,7 +14,7 @@ const Project = (props) => {
           <p className="project-date-gray-txt mini-txt">{props.projectDate}</p>
         </div>
       </div>
-      </a>
+      </Link>
     </div>
   )
 }

@@ -2,8 +2,15 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 const LandingInstance = (props) => {
+
+  // const landingStyles = {
+  //   backgroundImage: `url(../img/${props.bgImg})`,
+  //   backgroundRepeat: 'no-repeat',
+  //   backgroundSize: 'center/cover'
+  // };
+
   return (
-    <div style={{ backgroundImage: `url(../img/${props.bgImg}`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }} className="landing">
+    <div style={ {backgroundImage: `url(../img/${props.bgImg})`, backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundSize: 'cover'} } className="landing">
       <div className='landing-inner'>
         <div className="container landing-caption">
           <h3>{props.preHeader}</h3>

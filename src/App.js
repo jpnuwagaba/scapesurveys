@@ -17,6 +17,7 @@ import UAV from './pages/UAV'
 import LaserScanning from './pages/LaserScanning';
 import UtilityMapping from './pages/UtilityMapping'; 
 import ScrollToTop from './components/ScrollToTop';
+import UtilityPage from './pages/UtilityPage';
 
 
 function App() {
@@ -45,6 +46,9 @@ function App() {
           <Route path='/uav' element={<UAV />} />
           <Route path='/utilitymapping' element={<UtilityMapping />} />
           <Route path='/laserscanning' element={<LaserScanning />} />
+
+          {/* utility page */}
+          <Route path='/utilitypage' element={<UtilityPage />} />
 
           {/* no page */}
           <Route path='*' element={<Nopage />} />
