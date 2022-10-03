@@ -7,6 +7,7 @@ import InfoSection from '../components/InfoSection'
 import Projects from '../components/Projects'
 import Services from '../components/Services'
 import LandingInstance from '../components/LandingInstance'
+import BlueHeading from '../components/BlueHeading'
 
 
 const HomePage = () => {
@@ -17,7 +18,7 @@ const HomePage = () => {
   return (
     <div>
         <LandingInstance
-          bgImg='./Whatsapp/IMG-20220928-WA0034.jpg'
+          bgImg='surveyor-img.jpg'
           preHeader='Consistent & Accurate'
           landingCaptionHeader='Best Solutions for your Surveys'
           InfoSectionLinkName='See Company Brochure'
@@ -25,8 +26,9 @@ const HomePage = () => {
         />
         <AboutUs />
         <ClientSection />
-        <h1 className='container'>Our Services</h1>
+        <BlueHeading heading='Our Services'/>
         <Services />
+        <BlueHeading heading='Our Values'/>
         <Corevalues />
         <InfoSection 
             InfoSectionHeading='Torit Airport - South Sudan'
@@ -35,7 +37,7 @@ const HomePage = () => {
             img='energy.jpg'
             link='projects'
         />
-        <h1 className='container'>Our Recent Projects</h1>
+        <BlueHeading heading='Our Recent Projects'/>
         <Projects />
         <InfoSection 
             InfoSectionHeading='Careers at Scapes and Surveys'

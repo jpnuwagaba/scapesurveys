@@ -7,7 +7,7 @@ const InfoSection = (props) => {
       <div className="info-section-right" style={{ backgroundImage: `url(../img/${props.img}`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }} />
       <div className="info-section-left">
         <div>
-          <h1>{props.InfoSectionHeading}</h1>
+          <div className='info-section-heading bold'>{props.InfoSectionHeading}</div>
           <p>{props.InfoSectionDetails}</p>
         </div>
         <div className="info-section-link">

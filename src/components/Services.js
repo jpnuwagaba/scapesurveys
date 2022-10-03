@@ -13,7 +13,7 @@ const Services = () => {
         />
         <Service 
           service='GIS Consulting & Surveying'
-          img='./img/landing-icons/earth-africa-solid.svg'
+          img='./img/landing-icons/globe.png'
           servicepage='gis'
         />
         <Service 

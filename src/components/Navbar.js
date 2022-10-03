@@ -1,34 +1,34 @@
-import { useState } from 'react'
+import {useState} from 'react'
 import React from 'react'
-import { Link } from 'react-router-dom'
-import CollapsibleMenu from '../components/CollapsibleMenu'
-import CollapsibleServices from './CollapsibleServices'
+import Hamburger from './Hamburger'
+import Logo from './Logo'
+import {Link} from 'react-router-dom'
 
 const Navbar = () => {
 
-  const [showMenu, setShowmenu] = useState()
+  const [menu, showMenu] = useState()
+
+  
 
   return (
-    <nav className='navbar'>
+    <div className='navbar'>
       <div className="navbar-container container">
-        <div className="nav-left">
-          <Link to="/"><img className='navbar-logo' src="./img/svg-without-bg.svg" alt="" /></Link>
-        </div>
-        <div className="nav-middle hide-on-small">
+        <Logo />
+        <div className="navbar-list hide-on-small">
           <ul>
-            <li><Link className='bold' to="/">Home</Link></li>
-            <li><Link className='bold' to="/about">About Us</Link></li>
-            <li className='collapsibleServices-flex'>
-              <div><CollapsibleServices /></div> <div><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg></div></li>
-            <li><Link className='bold' to="/projects">Projects</Link></li>
-            <li><Link className='bold' to="careers">Careers</Link></li>
+            <li className='bold nav-item'><Link to="/">Home</Link></li>
+            <li className='bold nav-item'><Link to="/about">About Us</Link></li>
+            <li className='bold nav-item'><Link to="/services">Services</Link></li>
+            <li className='bold nav-item'><Link to="/projects">Projects</Link></li>
+            <li className='bold nav-item'><Link to="/careers">Careers</Link></li>
           </ul>
         </div>
-        <div className="menu-icon show-on-small">
-          <CollapsibleMenu />
-        </div>
+        <div onClick={() => showMenu(!menu)} className="hamburger-menu-main show-on-small"><Hamburger /></div>
       </div>
-    </nav>
+      <div style={{display: 'none'}} className="menu">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo, dignissimos reiciendis voluptatum repellat ipsa corrupti, eos quibusdam odit temporibus animi iste doloremque quis saepe amet fuga excepturi sint nam? Maxime unde quia illo! Alias, ex architecto voluptates nihil soluta vitae deserunt cupiditate placeat animi, consequuntur id quae atque dolore nisi!
+      </div>
+    </div>
   )
 }
 

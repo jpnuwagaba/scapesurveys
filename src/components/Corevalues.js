@@ -4,7 +4,6 @@ import Corevalue from './Corevalue'
 const Corevalues = () => {
   return (
     <>
-      <h1 style={{ marginBottom: '1.5rem' }} className='container'>Our Core values</h1>
       <div className="container core-values">
         <Corevalue
           img='./img/handshake1.png'
