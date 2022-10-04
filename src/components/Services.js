@@ -12,14 +12,14 @@ const Services = () => {
           servicepage='engineeringcadastral'
         />
         <Service 
+          service='3D Laser Scanning'
+          img='./img/laser.png'
+          servicepage='laserscanning'
+        />
+        <Service 
           service='GIS Consulting & Surveying'
           img='./img/landing-icons/globe.png'
           servicepage='gis'
-        />
-        <Service 
-          service='Land Development Services'
-          img='./img/houses.png'
-          servicepage='landdevelopment'
         />
         <Service 
           service='Utility Mapping'
@@ -27,14 +27,14 @@ const Services = () => {
           servicepage='utilitymapping'
         />
         <Service 
+          service='Land Development Services'
+          img='./img/houses.png'
+          servicepage='landdevelopment'
+        />
+        <Service 
           service='UAV Lidar Scanning & Aerial Mapping'
           img='./img/landing-icons/drone.png'
           servicepage='uav'
-        />
-        <Service 
-          service='3D Laser Scanning'
-          img='./img/laser.png'
-          servicepage='laserscanning'
         />
       </div>
     </div>

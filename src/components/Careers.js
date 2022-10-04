@@ -16,14 +16,14 @@ const Careers = () => {
         />
         <Career 
             career='Engineering Surveyor'
-            careerImg='total-station.png'
+            careerImg='/landing-icons/mapping (1).png'
             workingHours='Full time'
             location='Kampala, Uganda'
             duration='Since January 2021'
         />
         <Career 
             career='GIS Analyst'
-            careerImg='/landing-icons/gis.png'
+            careerImg='/landing-icons/globe.png'
             workingHours='Full time'
             location='Kampala, Uganda'
             duration='Since May 2022'

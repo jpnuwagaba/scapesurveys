@@ -22,7 +22,7 @@ const HomePage = () => {
           preHeader='Consistent & Accurate'
           landingCaptionHeader='Best Solutions for your Surveys'
           InfoSectionLinkName='See Company Brochure'
-          landingDescription='Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, id quaerat! Nulla sapiente culpa suscipit, minus earum a eum. Accusantium repellat sunt et eveniet impedit.'
+          landingDescription='We are one of the leading land survey firms in Uganda and we have all competencies of Geomatics and Land Management. Ready to deliver the quality of service you deserve.'
         />
         <AboutUs />
         <ClientSection />
