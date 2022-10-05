@@ -33,7 +33,7 @@ const HomePage = () => {
           the field through hands-on skills of over twenty five qualified office and field men. We are an
           inclusive working society and interested in making the future better for everyone.'
           InfoSectionLinkName='See more'
-          img='pexels-andrea-piacquadio-834863.jpg'
+          img='about-us.jpg'
           link='about'
         />
         <ClientSection />
@@ -41,6 +41,7 @@ const HomePage = () => {
         <Services />
         <BlueHeading heading='Our Values'/>
         <Corevalues />
+        <BlueHeading heading='Our Recent Projects'/>
         <InfoSection 
             InfoSectionHeading='Torit Airport - South Sudan'
             InfoSectionDetails='The new Torit land mark has kick started with high end survey solutions brought to life by the latest survey techniques.'
@@ -48,7 +49,6 @@ const HomePage = () => {
             img='energy.jpg'
             link='projects'
         />
-        <BlueHeading heading='Our Recent Projects'/>
         <Projects />
         <InfoSection 
             InfoSectionHeading='Careers at Scapes and Surveys'
