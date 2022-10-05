@@ -1,7 +1,7 @@
 
 export default {
   name: 'project',
-  title: 'Project',
+  title: 'Projects',
   type: 'document',
   fields: [
     {
@@ -31,7 +31,7 @@ export default {
     {
       name: 'date',
       title: 'Date',
-      type: 'date'
+      type: 'datetime'
     },
     {
       name: 'details',

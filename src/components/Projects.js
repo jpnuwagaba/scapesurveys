@@ -1,11 +1,48 @@
+// import { useState, useEffect } from 'react';
 import React from 'react'
 import Project from './Project';
 import { Link } from 'react-router-dom'
+// import sanityClient from '../Client'
 
 const Projects = () => {
+
+  // const [projectData, setProject] = useState(null)
+
+  // useEffect(() => {
+  //   sanityClient.fetch(`*[_type == "project"]{
+  //     name,
+  //     category,
+  //     date,
+  //     details,
+  //     slug,
+  //     image{
+  //       asset->{
+  //         _id,
+  //         url
+  //       },
+  //       alt
+  //     }
+  //   }`)
+  //     .then((data) => setProject(data))
+  //     .catch(console.error)
+  // }, [])
+
   return (
     <div className='projects container'>
       <div className='projects-container'>
+        {/* {projectData && projectData.map((project, index) => (
+          <Link to={"/projects/" + project.slug.current} key={project.slug.current}>
+            <div key={index}>
+              <Project
+                projectServiceCategory={project.category}
+                projectName={project.name}
+                projectDate={project.date}
+                img={project.image}
+              />
+            </div>
+          </Link>
+        ))} */}
+
         <Project
           projectServiceCategory='UAV Mapping'
           projectName='Isingiro Drone Project'
@@ -20,7 +57,7 @@ const Projects = () => {
         />
         <Project
           projectServiceCategory='Engineering Surveying'
-          projectName='Dorit Airport, Dorit, South Sudan'
+          projectName='Torit Airport, Torit, South Sudan'
           projectDate='May 23, 2022'
           img='energy.jpg'
         />

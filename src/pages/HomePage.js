@@ -8,6 +8,7 @@ import Projects from '../components/Projects'
 import Services from '../components/Services'
 import LandingInstance from '../components/LandingInstance'
 import BlueHeading from '../components/BlueHeading'
+import Introslider from '../components/Introslider'
 
 
 const HomePage = () => {
@@ -17,6 +18,7 @@ const HomePage = () => {
 
   return (
     <div>
+        {/* <Introslider /> */}
         <LandingInstance
           bgImg='surveyor-img.jpg'
           preHeader='Consistent & Accurate'
@@ -24,7 +26,16 @@ const HomePage = () => {
           InfoSectionLinkName='See Company Brochure'
           landingDescription='We are one of the leading land survey firms in Uganda and we have all competencies of Geomatics and Land Management. Ready to deliver the quality of service you deserve.'
         />
-        <AboutUs />
+        <InfoSection 
+          InfoSectionHeading='About Us'
+          InfoSectionDetails='Scapes and Surveys is a survey firm based in Kampala Uganda with competencies in fields of Geomatics and Land
+          Management. Established in 2010, and is now providing precise and reliable solutions pertaining to
+          the field through hands-on skills of over twenty five qualified office and field men. We are an
+          inclusive working society and interested in making the future better for everyone.'
+          InfoSectionLinkName='See more'
+          img='pexels-andrea-piacquadio-834863.jpg'
+          link='about'
+        />
         <ClientSection />
         <BlueHeading heading='Our Services'/>
         <Services />

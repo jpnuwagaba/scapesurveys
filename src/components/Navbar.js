@@ -7,7 +7,7 @@ import {NavLink} from 'react-router-dom'
 
 const Navbar = () => {
 
-  const [menu, showMenu] = useState()
+  const [menu, showMenu] = useState(true)
 
   
 
@@ -24,10 +24,19 @@ const Navbar = () => {
             <li className='bold nav-item'><NavLink activeClassName="blue-color" to="/careers">Careers</NavLink></li>
           </ul>
         </div>
-        <div onClick={() => showMenu(!menu)} className="hamburger-menu-main show-on-small"><Hamburger /></div>
+        <div onClick={() => showMenu(!menu)} className="bold hamburger-menu-main show-on-small">
+          {/* <Hamburger /> */}
+          {menu ? `MENU` : `CLOSE`}
+          </div>
       </div>
-      <div style={{display: 'none'}} className="menu">
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo, dignissimos reiciendis voluptatum repellat ipsa corrupti, eos quibusdam odit temporibus animi iste doloremque quis saepe amet fuga excepturi sint nam? Maxime unde quia illo! Alias, ex architecto voluptates nihil soluta vitae deserunt cupiditate placeat animi, consequuntur id quae atque dolore nisi!
+      <div style={menu ? {display: 'none'} : {display: 'block'}} className="menu">
+      <ul>
+            <li onClick={() => showMenu(true)} className='bold nav-item'><NavLink to="/">Home</NavLink></li>
+            <li onClick={() => showMenu(true)} className='bold nav-item'><NavLink to="/about">About Us</NavLink></li>
+            <li onClick={() => showMenu(true)} className='bold nav-item'><NavLink to="/services">Services</NavLink></li>
+            <li onClick={() => showMenu(true)} className='bold nav-item'><NavLink to="/projects">Projects</NavLink></li>
+            <li onClick={() => showMenu(true)} className='bold nav-item'><NavLink to="/careers">Careers</NavLink></li>
+          </ul>
       </div>
     </div>
   )
