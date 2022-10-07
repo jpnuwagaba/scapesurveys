@@ -10,7 +10,7 @@ const Projects = () => {
   const [projectData, setProject] = useState(null)
 
   useEffect(() => {
-    sanityClient.fetch(`*[_type == "project" && shouldShowOnHomePage = 'true']{
+    sanityClient.fetch(`*[_type == "project"]{
       name,
       category,
       date,
