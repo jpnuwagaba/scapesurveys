@@ -17,7 +17,7 @@ const GIS = () => {
       <TextSection
         textSectionHead='Engineering Surveying'
         textSectionDesc="Engineering surveying involves determining the position of natural and man made features on or beneath the earth's surface and utilizing these features in the planning, design and construction of works. It is a critical part of any engineering project'"
-        img='nms.jpeg'
+        img='landing-img1.jpg'
       />
     </div>
   )

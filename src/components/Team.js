@@ -61,7 +61,7 @@ const Team = () => {
         </div>        
         <div className="team-member-grid-item">
         <TeamMember
-          name='Elvin Clint'
+          name='Elvin Clint Tumukunde'
           img='elvin.jpg'
           position='Surveyor'
           social1link='*'

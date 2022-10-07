@@ -9,12 +9,12 @@ const Services = () => {
         <Service 
           service='Cadastral Surveying'
           img='./img/map.png'
-          servicepage='engineeringcadastral'
+          servicepage='cadastral'
         />
         <Service 
           service='Engineering Surveying'
           img='./img/landing-icons/mapping (1).png'
-          servicepage='engineeringcadastral'
+          servicepage='engineering'
         />
         <Service 
           service='3D Laser Scanning'
