@@ -48,7 +48,7 @@ function App() {
           <Route path='/laserscanning' element={<LaserScanning />} />
 
           {/* utility page */}
-          <Route path='/utilitypage' element={<UtilityPage />} />
+          <Route path='/Utilitypage' element={<UtilityPage />} />
 
           {/* no page */}
           <Route path='*' element={<Nopage />} />

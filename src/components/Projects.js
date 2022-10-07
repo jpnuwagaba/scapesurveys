@@ -34,7 +34,7 @@ const Projects = () => {
           <Link to={"/projects/" + project.slug.current} key={project.slug.current}>
             <div key={index}>
               <Project
-                projectServiceCategory={project.category}
+                projectServiceCategory={project.category} 
                 projectName={project.name}
                 projectDate={project.date}
                 img={project.image}
