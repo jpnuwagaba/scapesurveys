@@ -23,8 +23,6 @@ const Projects = () => {
       .catch(console.error)
   }, [])
 
-  const recentProjects = projectData.slice(0,5)
-
 
   return (
     <div className='projects'>
@@ -37,7 +35,7 @@ const Projects = () => {
         />
       <div className="container">
       <div className='projects-container'>
-        {recentProjects && recentProjects.map((project, index) => (
+        {projectData && projectData.map((project, index) => (
           <Link to={"/projectpage"}>         
             <div key={index}>
               <Project
