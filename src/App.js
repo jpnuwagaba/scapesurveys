@@ -9,7 +9,8 @@ import AboutPage from './pages/AboutPage'
 import CareersPage from './pages/CareersPage'
 import ProjectsPage from './pages/ProjectsPage'
 import ServicesPage from './pages/ServicesPage'
-import EngineeringCadastral from './pages/EngineeringCadastral'
+import Cadastral from './pages/Cadastral'
+import Engineering from './pages/Engineering'
 import Nopage from './pages/Nopage'
 import GIS from './pages/GIS';
 import LandDevelopment from './pages/LandDevelopment'
@@ -40,7 +41,8 @@ function App() {
           <Route path='/careers' element={<CareersPage />} />
 
           {/* services pages */}
-          <Route path='/engineeringcadastral' element={<EngineeringCadastral />} />
+          <Route path='/cadastral' element={<Cadastral />} />
+          <Route path='/engineering' element={<Engineering />} />
           <Route path='/gis' element={<GIS />} />
           <Route path='/landdevelopment' element={<LandDevelopment />} />
           <Route path='/uav' element={<UAV />} />

@@ -31,17 +31,12 @@ export default {
     {
       name: 'date', 
       title: 'Date',
-      type: 'datetime'
+      type: 'date'
     },
     {
       name: 'details',
       title: 'Details',
       type: 'string'
-    },
-    {
-      name: 'show',
-      title: 'Show',
-      type: 'boolean'
     }
   ]
 }

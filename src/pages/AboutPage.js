@@ -14,14 +14,18 @@ const AboutPage = () => {
     <div>
       <PageHeader
         pageHeading='About Us'
-        briefDesc='Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, id quaerat! Nulla sapiente culpa suscipit, minus earum a eum. Accusantium repellat sunt et eveniet impedit.'
-        img='company-team.jpg'
       />
       <TextSection
         heading='Our Story'
         textSectionHead='Our Story'
-        textSectionDesc='Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla cupiditate, et fugit culpa maiores atque rerum quis sapiente debitis dolorem mollitia ducimus itaque aliquid sint velit odio neque. Quod beatae nesciunt facilis, iure rem accusantium. Accusamus impedit atque error dolorem enim doloremque reprehenderit beatae commodi doloribus quae? Sapiente soluta asperiores distinctio dolorum eveniet fuga inventore dolorem? Itaque inventore doloremque, eveniet voluptate aliquam facere est illum voluptas, aperiam iure ab doloribus exercitationem corrupti et rem consequuntur repellat aspernatur nobis dolore esse fuga vel sit voluptates eligendi? Beatae numquam inventore cum quam eaque amet aliquid delectus dolore deserunt, repellendus necessitatibus blanditiis consectetur quae? Molestiae in ad sapiente velit nobis consequatur ab recusandae!'
-        img='nms.jpeg'
+        textSectionDesc='Scapes and Surveys is a survey firm based in Kampala Uganda with competencies in fields of Geomatics and Land
+        Management. Established in 2010, and is now providing precise and reliable solutions pertaining to
+        the field through hands-on skills of over twenty five qualified office and field men. We are an
+        inclusive working society and interested in making the future better for everyone. In 2010, Arthur Akanga and Diana Abeho 
+        started Scapes and Surveys Associates with the vision of reaching needs of millions of people in Uganda and around the world. They have since then 
+        ensured that Scapes and Surveys Associates evolves around strong humanitarian and socially inclusive working principles, making it a company where anyone 
+        can work. Today, Scapes and Surveys Associates is one of the leading firms in the disciplines of Land Surveying and Geomatics.'
+        img='about-us.jpg'
       />
       <Team />
     </div>
