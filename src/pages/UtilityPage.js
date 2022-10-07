@@ -1,21 +1,20 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react';
 import React from 'react'
 import TextSection from '../components/TextSection'
 import PageHeader from '../components/PageHeader'
+import sanityClient from '../Client'
 import BlueHeading from '../components/BlueHeading'
 
 
 
 const UtilityPage = () => {
   const documentHeading = document.getElementById('documentHeading')
-  documentHeading.innerHTML = 'utility Mapping | Scapes & Surveys'
+  documentHeading.innerHTML = 'Project | Scapes & Surveys'
 
   return (
     <>
       <PageHeader
         pageHeading='Project Page'
-        briefDesc='Working with us will not leave you the same - From mentorships to career development, Scapes and Surveys is building a broad and socially inclusive home-based and overseas work force to up the levels of industry service.'
-        img='utilitymapping.jpg'
       />
       <TextSection
         textSectionHead='Details'

@@ -1,78 +1,61 @@
-// import { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import React from 'react'
 import Project from './Project';
 import { Link } from 'react-router-dom'
-// import sanityClient from '../Client'
+import sanityClient from '../Client'
+import InfoSection from '../components/InfoSection'
 
 const Projects = () => {
 
-  // const [projectData, setProject] = useState(null)
+  const [projectData, setProject] = useState(null)
 
-  // useEffect(() => {
-  //   sanityClient.fetch(`*[_type == "project"]{
-  //     name,
-  //     category,
-  //     date,
-  //     details,
-  //     slug,
-  //     image{
-  //       asset->{
-  //         _id,
-  //         url
-  //       },
-  //       alt
-  //     }
-  //   }`)
-  //     .then((data) => setProject(data))
-  //     .catch(console.error)
-  // }, [])
+  useEffect(() => {
+    sanityClient.fetch(`*[_type == "project" && shouldShowOnHomePage = 'true']{
+      name,
+      category,
+      date,
+      details,
+      shouldShowOnHomePage,
+      slug,
+      "imageUrl": image.asset->url,
+    }`)
+      .then((data) => setProject(data))
+      .catch(console.error)
+  }, [])
+
 
   return (
-    <div className='projects container'>
+    <div className='projects'>
+      <InfoSection 
+            InfoSectionHeading='Torit Airport - South Sudan'
+            InfoSectionDetails='The new Torit land mark is to kick start with high end survey solutions brought to life by the latest survey techniques.'
+            InfoSectionLinkName='See Project Details'
+            img='energy.jpg'
+            link='projects'
+        />
+      <div className="container">
       <div className='projects-container'>
-        {/* {projectData && projectData.map((project, index) => (
-          <Link to={"/projects/" + project.slug.current} key={project.slug.current}>
+        {projectData && projectData.map((project, index) => (
+          <Link to={"/projectpage"}>         
             <div key={index}>
               <Project
-                projectServiceCategory={project.category} 
+                projectServiceCategory={project.category}
                 projectName={project.name}
                 projectDate={project.date}
-                img={project.image}
+                img={project.imageUrl}
               />
             </div>
           </Link>
-        ))} */}
-
-        <Project
-          projectServiceCategory='UAV Mapping'
-          projectName='Isingiro Drone Project'
-          projectDate='May 23, 2022'
-          img='drone.jpg'
-        />
-        <Project
-          projectServiceCategory='Cadastral Surveying'
-          projectName='Boundary Opening in Kiryandongo'
-          projectDate='September 23, 2022'
-          img='land-surveying.jpg'
-        />
-        <Project
-          projectServiceCategory='Engineering Surveying'
-          projectName='Torit Airport, Torit, South Sudan'
-          projectDate='May 23, 2022'
-          img='energy.jpg'
-        />
-        <Project
-          projectServiceCategory='3D laser scanning'
-          projectName='3D Laser Scanning Cohort organised at Makerere University'
-          projectDate='May 23, 2022'
-          img='mak.jpg'
-        />
+        ))}
+        <div>
+          <Link to="/projects"><button className="projects-btn btn blue-btn">SEE MORE</button></Link>
+        </div>
       </div>
-      <div>
-        <Link to="/projects"><button className="projects-btn btn blue-btn">SEE MORE</button></Link>
       </div>
     </div>
   )
 }
 
 export default Projects
+
+// + project.slug.current} key={project.slug.current

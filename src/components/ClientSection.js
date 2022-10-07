@@ -7,11 +7,11 @@ const ClientSection = () => {
             <button className="blue-btn1">clients that trust us</button>
         </div>
         <div className="company-logos">
-            <img className='company-logo' src="./img/mlhud.png" alt="" srcset="" />
-            <img className='company-logo' src="./img/coaug.png" alt="" srcset="" />
-            <img className='company-logo' src="./img/svg-without-bg.svg" alt="" srcset="" />
-            <img className='company-logo' src="./img/maklogo.jfif" alt="" srcset="" />
-            <img className='company-logo' src="./img/rea.jfif" alt="" srcset="" />
+            <img className='company-logo' src="./img/mlhud.png" alt="" srcSet="" />
+            <img className='company-logo' src="./img/coaug.png" alt="" srcSet="" />
+            <img className='company-logo' src="./img/svg-without-bg.svg" alt="" srcSet="" />
+            <img className='company-logo' src="./img/maklogo.jfif" alt="" srcSet="" />
+            <img className='company-logo' src="./img/rea.jfif" alt="" srcSet="" />
         </div>
     </div>
   )

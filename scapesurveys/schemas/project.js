@@ -29,7 +29,7 @@ export default {
       }
     },
     {
-      name: 'date',
+      name: 'date', 
       title: 'Date',
       type: 'datetime'
     },
@@ -37,6 +37,11 @@ export default {
       name: 'details',
       title: 'Details',
       type: 'string'
+    },
+    {
+      name: 'show',
+      title: 'Show',
+      type: 'boolean'
     }
   ]
 }

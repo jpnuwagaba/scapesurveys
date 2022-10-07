@@ -42,13 +42,7 @@ const HomePage = () => {
         <BlueHeading heading='Our Values'/>
         <Corevalues />
         <BlueHeading heading='Our Recent Projects'/>
-        <InfoSection 
-            InfoSectionHeading='Torit Airport - South Sudan'
-            InfoSectionDetails='The new Torit land mark has kick started with high end survey solutions brought to life by the latest survey techniques.'
-            InfoSectionLinkName='See Project Details'
-            img='energy.jpg'
-            link='projects'
-        />
+        
         <Projects />
         <InfoSection 
             InfoSectionHeading='Careers at Scapes and Surveys'

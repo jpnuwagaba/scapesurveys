@@ -7,7 +7,7 @@ const Career = (props) => {
         <h3>{props.career}</h3>
         <div className="separator"></div>
         <div className="career-grid">
-          <div className="career-img"><img src={`./img/${props.careerImg}`} alt="" srcset="" /></div>
+          <div className="career-img"><img src={`./img/${props.careerImg}`} alt="" srcSet="" /></div>
           <div className="career-desc">
             <div className="bold gray-txt">Location</div>
             <div>{props.location}</div>

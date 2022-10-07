@@ -4,7 +4,7 @@ const Corevalue = (props) => {
   return (
     <>
       <div className="core-value">
-        <img src={props.img} alt="" srcset="" />
+        <img src={props.img} alt="" srcSet="" />
         <h3>{props.corevalue}</h3>
         <p>{props.corevalueDesc}</p>
       </div>

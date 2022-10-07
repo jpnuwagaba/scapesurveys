@@ -6,7 +6,7 @@ const Service = (props) => {
     <Link to={`/${props.servicepage}`}>
       <div className='service'>
         <div className="service-inner">
-          <div><img src={props.img} alt="" srcset="" /></div>
+          <div><img src={props.img} alt="" srcSet="" /></div>
           <div><h3>{props.service}</h3></div>
         </div>
       </div>
