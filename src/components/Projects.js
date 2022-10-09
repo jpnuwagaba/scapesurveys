@@ -15,7 +15,6 @@ const Projects = () => {
       category,
       date,
       details,
-      shouldShowOnHomePage,
       slug,
       "imageUrl": image.asset->url,
     }`)
@@ -36,7 +35,7 @@ const Projects = () => {
       <div className="container">
       <div className='projects-container'>
         {projectData && projectData.map((project, index) => (
-          <Link to={"/projectpage"}>         
+          <Link to={`/projects/${project.slug.current}`} key={project.slug.current}>         
             <div key={index}>
               <Project
                 projectServiceCategory={project.category}

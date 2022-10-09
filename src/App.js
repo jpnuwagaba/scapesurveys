@@ -23,11 +23,6 @@ import UtilityPage from './pages/UtilityPage';
 
 function App() {
   
-
-  // useEffect(() => {
-  //   window.scrollTo(0, 0)
-  // }, [])
-
   return (
     <Router>
       <ScrollToTop />
@@ -50,7 +45,7 @@ function App() {
           <Route path='/laserscanning' element={<LaserScanning />} />
 
           {/* utility page */}
-          <Route path='/projectpage' element={<UtilityPage />} />
+          <Route path='/projects/:slug' element={<UtilityPage />} />
 
           {/* no page */}
           <Route path='*' element={<Nopage />} />

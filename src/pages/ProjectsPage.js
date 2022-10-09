@@ -25,7 +25,6 @@ const ProjectsPage = () => {
       .catch(console.error)
   }, [])
 
-
   return (
     <>
       <PageHeader
@@ -34,7 +33,7 @@ const ProjectsPage = () => {
       <div className='projects container'>
         <div className='projects-container'>
           {projectData && projectData.map((project, index) => (
-            <Link to={"/projectpage"}>
+            <Link to={`/projects/${project.slug.current}`}>
               <div key={index}>
                 <Project
                   projectServiceCategory={project.category}

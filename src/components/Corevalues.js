@@ -23,7 +23,7 @@ const Corevalues = () => {
           <Corevalue
             img='./img/quality.png'
             corevalue='Quality'
-            corevalueDesc='Using both old unbiased data sources and the new advancing and reliable technology to ensure excellence in service delivery.'
+            corevalueDesc='Using reliable data and technologies to ensure excellence in service delivery.'
           />
         </div>
         <div>
