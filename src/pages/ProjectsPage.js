@@ -25,6 +25,9 @@ const ProjectsPage = () => {
       .catch(console.error)
   }, [])
 
+  if (!projectData) return <h1 style={{margin: '30vh auto', color: '#2b388f'}} className='container'>Loading...</h1>
+
+
   return (
     <>
       <PageHeader

@@ -31,7 +31,7 @@ const UtilityPage = () => {
       .catch(console.error)
   }, [slug])
 
-  if (!singleProject) return <h1 style={{margin: '30vh auto'}} className='container'>Loading...</h1>
+  if (!singleProject) return <h1 style={{margin: '30vh auto', color: '#2b388f'}} className='container'>Loading...</h1>
 
   const documentHeading = document.getElementById('documentHeading')
   documentHeading.innerHTML = `${singleProject.name} | Scapes & Surveys`
