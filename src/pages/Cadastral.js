@@ -5,7 +5,7 @@ import TextSection from '../components/TextSection'
 
 const GIS = () => {
   const documentHeading = document.getElementById('documentHeading')
-  documentHeading.innerHTML = 'Engineering & Cadastral Surveying | Scapes & Surveys'
+  documentHeading.innerHTML = 'Cadastral Surveying | Scapes & Surveys'
 
   return (
     <div>

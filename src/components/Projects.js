@@ -18,7 +18,7 @@ const Projects = () => {
       slug,
       "imageUrl": image.asset->url,
     }`)
-      .then((data) => setProject(data))
+      .then((data) => setProject(data.slice(0,4)))
       .catch(console.error)
   }, [])
 

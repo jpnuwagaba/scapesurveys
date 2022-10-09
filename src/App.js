@@ -1,5 +1,6 @@
 import './App.css';
 import Footer from './components/Footer';
+import { useParams } from 'react-router-dom'
 import Navbar from './components/Navbar';
 import { BrowserRouter as Router, Routes, Route, ScrollRestoration } from "react-router-dom";
 
@@ -22,6 +23,8 @@ import UtilityPage from './pages/UtilityPage';
 
 
 function App() {
+  const { slug } = useParams()
+
   
   return (
     <Router>
@@ -36,13 +39,13 @@ function App() {
           <Route path='/careers' element={<CareersPage />} />
 
           {/* services pages */}
-          <Route path='/cadastral' element={<Cadastral />} />
-          <Route path='/engineering' element={<Engineering />} />
+          <Route path='/cadastral-surveying' element={<Cadastral />} />
+          <Route path='/engineering-surveying' element={<Engineering />} />
           <Route path='/gis' element={<GIS />} />
-          <Route path='/landdevelopment' element={<LandDevelopment />} />
-          <Route path='/uav' element={<UAV />} />
-          <Route path='/utilitymapping' element={<UtilityMapping />} />
-          <Route path='/laserscanning' element={<LaserScanning />} />
+          <Route path='/land-development' element={<LandDevelopment />} />
+          <Route path='/uav-lidar' element={<UAV />} />
+          <Route path='/utility-mapping' element={<UtilityMapping />} />
+          <Route path='/laser-scanning' element={<LaserScanning />} />
 
           {/* utility page */}
           <Route path='/projects/:slug' element={<UtilityPage />} />

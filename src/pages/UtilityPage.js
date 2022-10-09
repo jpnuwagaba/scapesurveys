@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom'
 import React from 'react'
-import TextSection from '../components/TextSection'
+import FetchingTextSection from '../components/FetchingTextSection'
 import PageHeader from '../components/PageHeader'
 import sanityClient from '../Client'
 import imageUrlBuilder from '@sanity/image-url'
@@ -14,14 +14,12 @@ function urlFor(source) {
 
 
 const UtilityPage = () => {
-  const documentHeading = document.getElementById('documentHeading')
-  documentHeading.innerHTML = 'Project | Scapes & Surveys'
-
+  
   const [singleProject, setSingleProject] = useState(null)
   const { slug } = useParams()
 
   useEffect(() => {
-    sanityClient.fetch(`*[slug.current == "${slug}"]{
+    sanityClient.fetch(`*[_type == "project" && slug.current == "${slug}"]{
       name,
       category,
       date,
@@ -33,19 +31,21 @@ const UtilityPage = () => {
       .catch(console.error)
   }, [slug])
 
-  if (!singleProject) return <div className='container'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat culpa sint, omnis ipsum ex soluta consectetur aliquam veniam perspiciatis facilis quia tenetur non eos quam totam, iure nesciunt nulla rem quod doloribus eaque deserunt distinctio voluptatum reiciendis? Ea voluptate excepturi eum numquam, quis ipsam magni explicabo incidunt. Tenetur, vitae perferendis?</div>
+  if (!singleProject) return <h1 style={{margin: '30vh auto'}} className='container'>Loading...</h1>
 
+  const documentHeading = document.getElementById('documentHeading')
+  documentHeading.innerHTML = `${singleProject.name} | Scapes & Surveys`
 
   return (
     <>
       <div>
         <PageHeader
-          pageHeading={singleProject.name}
+          pageHeading={singleProject && singleProject.name}
         />
-        <TextSection
-          textSectionHead={singleProject.name + ' - Details'}
-          textSectionDesc={singleProject.details}
-          img={urlFor(singleProject.image).url()}
+        <FetchingTextSection
+          textSectionHead={'Project Details'}
+          textSectionDesc={singleProject && singleProject.details}
+          img={singleProject && singleProject.imageUrl}
         />
       </div>
 
