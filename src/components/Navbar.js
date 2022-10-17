@@ -1,9 +1,10 @@
 import {useState} from 'react'
 import React from 'react'
 import Hamburger from './Hamburger'
-import Logo from './Logo'
+// import Logo from 'Logo'
 import {Link} from 'react-router-dom'
 import {NavLink} from 'react-router-dom'
+import Logo from '../Logo'
 
 const Navbar = () => {
 
@@ -14,14 +15,14 @@ const Navbar = () => {
   return (
     <div className='navbar'>
       <div className="navbar-container container">
-        <Logo />
+        <Logo/>
         <div className="navbar-list hide-on-small">
           <ul>
-            <li className='bold nav-item'><NavLink activeClassName="blue-color" to="/">Home</NavLink></li>
-            <li className='bold nav-item'><NavLink activeClassName="blue-color" to="/about">About Us</NavLink></li>
-            <li className='bold nav-item'><NavLink activeClassName="blue-color" to="/services">Services</NavLink></li>
-            <li className='bold nav-item'><NavLink activeClassName="blue-color" to="/projects">Projects</NavLink></li>
-            <li className='bold nav-item'><NavLink activeClassName="blue-color" to="/careers">Careers</NavLink></li>
+            <li className='bold nav-item'><NavLink to="/">Home</NavLink></li>
+            <li className='bold nav-item'><NavLink to="/about">About Us</NavLink></li>
+            <li className='bold nav-item'><NavLink to="/services">Services</NavLink></li>
+            <li className='bold nav-item'><NavLink to="/projects">Projects</NavLink></li>
+            <li className='bold nav-item'><NavLink to="/careers">Careers</NavLink></li>
           </ul>
         </div>
         <div onClick={() => showMenu(!menu)} className="bold hamburger-menu-main show-on-small">

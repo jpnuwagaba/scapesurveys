@@ -114,6 +114,8 @@ h3 {
   margin-bottom: 1rem;
 }
 
+
+
 /* INFO SECTION */
 .info-section {
   border-radius: 5px;
@@ -933,6 +935,16 @@ footer {
     grid-template-columns: 1fr;
   }
 
+  .footer-list-1 ul {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .footer-list-2 {
+    margin-top: 1rem;
+  }
+
   .fullscreen-grid {
     grid-template-columns: 1fr;
   }
@@ -959,4 +971,3 @@ footer {
 
 }
 
-.blue-heading{}

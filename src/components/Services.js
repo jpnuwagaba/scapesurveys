@@ -1,46 +1,51 @@
+import { useState, useEffect, useParams } from 'react'
+import { Link } from 'react-router-dom'
+import sanityClient from '../Client'
 import React from 'react'
 import Service from './Service'
+// import imageUrlBuilder from '@sanity/image-url'
+
+
+// const builder = imageUrlBuilder(sanityClient)
+
+// function urlFor(source) {
+//   return builder.image(source)
+// }
 
 const Services = () => {
+
+  const [serviceData, setService] = useState(null)
+
+  useEffect(() => {
+    sanityClient.fetch(`*[_type == "service"]{
+      name,
+      details,
+      slug,
+      "imageUrl": serviceImage.asset->url,
+      "imageUrl2": serviceIcon.asset->url
+    }`).then((data) => setService(data))
+      .catch(console.error)
+  }, [])
+
+  if (!serviceData) return <h1 style={{ margin: '30vh auto', color: '#2b388f' }} className='container'>Loading...</h1>
+
+
   return (
     <div className='container'>
-      {/* <h1>Our Services</h1> */}
       <div className="services">
-        <Service 
-          service='Cadastral Surveying'
-          img='./img/map.png'
-          servicepage='cadastral-surveying'
-        />
-        <Service 
-          service='Engineering Surveying'
-          img='./img/landing-icons/mapping (1).png'
-          servicepage='engineering-surveying'
-        />
-        <Service 
-          service='3D Laser Scanning'
-          img='./img/laser.png'
-          servicepage='lasers-canning'
-        />
-        <Service 
-          service='GIS Consulting & Surveying'
-          img='./img/landing-icons/globe.png'
-          servicepage='gis'
-        />
-        <Service 
-          service='Utility Mapping'
-          img='./img/neural.png'
-          servicepage='utility-mapping'
-        />
-        <Service 
-          service='UAV Lidar Scanning & Aerial Mapping'
-          img='./img/landing-icons/drone.png'
-          servicepage='uav-lidar'
-        />
-        <Service 
-          service='Land Development Services'
-          img='./img/houses.png'
-          servicepage='land-development'
-        />
+        {
+          serviceData && serviceData.map((thisService, index) => (
+            <Link to={`/services/${thisService.slug.current}`} key={thisService.slug.current}>
+              <div key={index}>
+                <Service
+                  service={thisService.name}
+                  img={thisService.imageUrl2}
+                />
+              </div>
+            </Link>
+          ))
+        }
+
       </div>
     </div>
   )

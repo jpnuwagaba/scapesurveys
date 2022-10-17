@@ -30,13 +30,13 @@ const ProjectsPage = () => {
 
   return (
     <>
-      <PageHeader
+      <PageHeader 
         pageHeading='Projects'
       />
       <div className='projects container'>
         <div className='projects-container'>
           {projectData && projectData.map((project, index) => (
-            <Link to={`/projects/${project.slug.current}`}>
+            <Link to={`/projects/${project.slug.current}`} key={project.slug.current}>
               <div key={index}>
                 <Project
                   projectServiceCategory={project.category}

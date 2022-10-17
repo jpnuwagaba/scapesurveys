@@ -19,7 +19,7 @@ const UtilityPage = () => {
   const { slug } = useParams()
 
   useEffect(() => {
-    sanityClient.fetch(`*[_type == "project" && slug.current == "${slug}"]{
+    sanityClient.fetch(`*[_type == "project" && slug.current == "${slug}"][0]{
       name,
       category,
       date,
@@ -27,7 +27,7 @@ const UtilityPage = () => {
       slug,
       "imageUrl": image.asset->url,
     }`)
-      .then((data) => setSingleProject(data[0]))
+      .then((data) => setSingleProject(data))
       .catch(console.error)
   }, [slug])
 
@@ -48,7 +48,7 @@ const UtilityPage = () => {
           img={singleProject && singleProject.imageUrl}
         />
       </div>
-
+ 
     </>
   )
 }

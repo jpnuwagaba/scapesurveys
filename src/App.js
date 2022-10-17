@@ -10,16 +10,10 @@ import AboutPage from './pages/AboutPage'
 import CareersPage from './pages/CareersPage'
 import ProjectsPage from './pages/ProjectsPage'
 import ServicesPage from './pages/ServicesPage'
-import Cadastral from './pages/Cadastral'
-import Engineering from './pages/Engineering'
 import Nopage from './pages/Nopage'
-import GIS from './pages/GIS';
-import LandDevelopment from './pages/LandDevelopment'
-import UAV from './pages/UAV'
-import LaserScanning from './pages/LaserScanning';
-import UtilityMapping from './pages/UtilityMapping'; 
 import ScrollToTop from './components/ScrollToTop';
 import UtilityPage from './pages/UtilityPage';
+import SingleServicePage from './pages/SingleServicePage';
 
 
 function App() {
@@ -38,14 +32,9 @@ function App() {
           <Route path='/projects' element={<ProjectsPage />} />
           <Route path='/careers' element={<CareersPage />} />
 
-          {/* services pages */}
-          <Route path='/cadastral-surveying' element={<Cadastral />} />
-          <Route path='/engineering-surveying' element={<Engineering />} />
-          <Route path='/gis' element={<GIS />} />
-          <Route path='/land-development' element={<LandDevelopment />} />
-          <Route path='/uav-lidar' element={<UAV />} />
-          <Route path='/utility-mapping' element={<UtilityMapping />} />
-          <Route path='/laser-scanning' element={<LaserScanning />} />
+          
+          {/* single service page */}
+          <Route path='/services/:slug' element={<SingleServicePage />} />
 
           {/* utility page */}
           <Route path='/projects/:slug' element={<UtilityPage />} />
