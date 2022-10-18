@@ -25,7 +25,7 @@ const AboutPage = () => {
         started Scapes and Surveys Associates with the vision of reaching needs of millions of people in Uganda and around the world. They have since then 
         ensured that Scapes and Surveys Associates evolves around strong humanitarian and socially inclusive working principles, making it a company where anyone 
         can work. Today, Scapes and Surveys Associates is one of the leading firms in the disciplines of Land Surveying and Geomatics.'
-        img='about-us.jpg'
+        img='about.jpeg'
       />
       <Team />
     </div>

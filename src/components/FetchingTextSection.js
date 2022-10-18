@@ -14,7 +14,7 @@ const FetchingTextSection = (props) => {
               <li>{props.listItem1}</li>
               <li>{props.listItem2}</li>
               <li>{props.listItem3}</li>
-              <li>{props.listItem4}</li>
+              <li>{props.listItem4}</li> 
               <li>{props.listItem5}</li>
               <li>{props.listItem6}</li>
               <li>{props.listItem7}</li>

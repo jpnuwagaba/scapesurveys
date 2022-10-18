@@ -14,7 +14,7 @@ const Contact = () => {
               <h3>Our Location</h3>
               <p className='brown-txt'>Fraine Supermarket building, Ntinda</p>
               <p className='brown-txt'>2nd Floor, Rm 5 </p>
-              <p className='brown-txt'>P.O Box. 7096, Kampala Uganda</p>
+              <p className='brown-txt'>P.O Box. 33521, Kampala Uganda</p>
             </div>
             <div>
               <h3>Follow Scapes & Surveys Associates</h3>

@@ -176,6 +176,10 @@ h3 {
   gap: 60px;
 }
 
+.text-section-text p {
+  text-align: justify;
+}
+
 .text-section-img {
   height: 50vh;
   border-radius: 5px;

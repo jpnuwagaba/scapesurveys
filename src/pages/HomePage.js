@@ -33,7 +33,7 @@ const HomePage = () => {
           the field through hands-on skills of over twenty five qualified office and field men. We are an
           inclusive working society and interested in making the future better for everyone.'
           InfoSectionLinkName='See more'
-          img='about-us.jpg'
+          img='about.jpeg'
           link='about'
         />
         <ClientSection />
