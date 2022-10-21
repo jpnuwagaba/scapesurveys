@@ -10,14 +10,25 @@ export default {
       type: 'string'
     },
     {
-      name: 'image',
+      name: 'image', 
       title: 'Image',
       type: 'image'
     },
     {
       name: 'category',
       title: 'Category',
-      type: 'string'
+      type: 'string',
+      options: {
+        list: [
+          {value: "cadastral surveying", title: "Cadastral Surveying"},
+          {value: "engineering surveying", title: "Engineering Surveying"},
+          {value: "gid surveying and consulting", title: "GIS Surveying & Consulting"},
+          {value: "uav lidar scanning and aerial mapping", title: "UAV Lidar Scanning & Aerial Mapping"},
+          {value: "utility mapping", title: "Utility Mapping"},
+          {value: "3d laser scanning", title: "3D Laser Scanning "},
+          {value: "land development", title: "Land Development Services"}
+        ]
+      }
     },
     {
       name: 'slug',
