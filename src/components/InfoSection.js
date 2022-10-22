@@ -8,7 +8,7 @@ const InfoSection = (props) => {
       <div className="info-section-left">
         <div>
           <div className='info-section-heading bold'>{props.InfoSectionHeading}</div>
-          <p>{props.InfoSectionDetails}</p>
+          <p>{props.InfoSectionDetails}</p> 
         </div>
         <div className="info-section-link">
           <div className="link info-section-link-name bold">

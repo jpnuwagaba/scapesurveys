@@ -147,13 +147,11 @@ h3 {
   height: auto;
 }
 
-.info-section-left {
-  display: grid;
-  justify-content: space-between;
-  text-align: left;
+.info-section-left {  
+  text-align: justify;
   background: var(--blue);
   color: #eee;
-  padding: 10%;
+  padding: 10% 7%;
 }
 
 .info-section:hover .info-section-left {
