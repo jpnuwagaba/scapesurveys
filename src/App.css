@@ -97,12 +97,6 @@ li {
   transition: all ease-in-out 300ms;
 }
 
-.logo {
-  width: 90px;
-}
-
-.projects-btn {}
-
 .link-icon {
   width: 15px;
   fill: #eee;
@@ -147,8 +141,8 @@ h3 {
   height: auto;
 }
 
-.info-section-left {  
-  text-align: justify;
+.info-section-left {
+  text-align: left;
   background: var(--blue);
   color: #eee;
   padding: 10% 7%;
@@ -236,7 +230,7 @@ h3 {
   padding-top: 2rem;
 }
 
-.page-heading{
+.page-heading {
   padding: 1rem 0;
 }
 
@@ -245,13 +239,16 @@ h3 {
   /* border-bottom: #2b388f solid 7px; */
 }
 
-.main-page-content{}
+.logo img {
+  width: 120px;
+}
+
 
 /* NAVBAR */
 .navbar {
   position: fixed;
   background: #fff;
-  box-shadow: #333 ;
+  box-shadow: #333;
   padding: 20px 0;
   width: 100%;
   z-index: 25;
@@ -312,7 +309,6 @@ h3 {
 .menu ul li:last-child {
   border: none;
 }
-
 
 /* LANDING */
 .landing {
@@ -450,7 +446,7 @@ h3 {
 
 .core-values h3 {
   color: #2b388f;
-  margin-top: 0.5rem; 
+  margin-top: 0.5rem;
 }
 
 .core-value {
@@ -510,7 +506,8 @@ h3 {
   transform: translateX(-50%);
 }
 
-.project:hover .project-name, .project:hover .project-date {
+.project:hover .project-name,
+.project:hover .project-date {
   color: #eee;
 }
 
@@ -754,12 +751,12 @@ footer {
     grid-template-columns: 1fr 1fr;
   }
 
-  
+
   .core-values {
     grid-template-columns: 1fr 1fr;
   }
 
-  
+
   .projects-container {
     grid-template-columns: 1fr 1fr;
   }
@@ -775,7 +772,7 @@ footer {
   .team-member-grid-item:nth-of-type(1) {
     grid-column: auto;
   }
-  
+
   .team-member-grid-item:nth-of-type(2) {
     grid-column: auto;
   }
@@ -835,7 +832,7 @@ footer {
     padding: 10px 0;
   }
 
-  .navbar-logo {
+  .logo img {
     width: 100px;
   }
 
@@ -858,10 +855,6 @@ footer {
 }
 
 @media(max-width: 500px) {
-
-  .navbar-logo {
-    width: 70px;
-  }
 
   .main-page-content {
     padding-top: 10px;
@@ -906,15 +899,15 @@ footer {
   }
 
   .company-logo {
-    height: 30px;
-    margin: 1rem 25px;
+    height: 38px;
+    margin: 0.5rem 25px;
   }
 
   .services-grid {
     grid-template-columns: 1fr;
   }
 
-  
+
   .services {
     grid-template-columns: 1fr;
     gap: 0;
@@ -972,4 +965,3 @@ footer {
   }
 
 }
-

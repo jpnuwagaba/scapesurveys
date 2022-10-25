@@ -1,17 +1,17 @@
 import React from 'react'
-import AboutUs from '../components/AboutUs'
-import LandingInstance from '../components/LandingInstance'
 import PageHeader from '../components/PageHeader'
 import Team from '../components/Team'
+import {Helmet} from 'react-helmet'
 import TextSection from '../components/TextSection'
 
 const AboutPage = () => {
 
-  const documentHeading = document.getElementById('documentHeading')
-  documentHeading.innerHTML = 'About Us | Scapes & Surveys'
-
   return (
     <div>
+      <Helmet>
+        <title>About Us | Scapes & Surveys</title>
+        <meta name='description' content='Scapes and Surveys is a land survey firm based in Kampala Uganda' />
+      </Helmet>
       <PageHeader
         pageHeading='About Us'
       />

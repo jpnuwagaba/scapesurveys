@@ -2,13 +2,12 @@ import { useState, useEffect } from 'react';
 import sanityClient from '../Client'
 import React from 'react'
 import Project from '../components/Project'
+import {Helmet} from 'react-helmet'
 import { Link } from 'react-router-dom'
 import PageHeader from '../components/PageHeader'
 
 
 const ProjectsPage = () => {
-  const documentHeading = document.getElementById('documentHeading')
-  documentHeading.innerHTML = 'Projects | Scapes & Surveys'
 
   const [projectData, setProject] = useState(null)
 
@@ -30,6 +29,10 @@ const ProjectsPage = () => {
 
   return (
     <>
+    <Helmet>
+        <title>Projects | Scapes & Surveys</title>
+        <meta name='description' content='Scapes and Surveys is a land survey firm based in Kampala Uganda' />
+      </Helmet>
       <PageHeader 
         pageHeading='Projects'
       />

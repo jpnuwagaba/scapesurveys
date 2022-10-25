@@ -10,7 +10,7 @@ const ClientSection = () => {
             <img className='company-logo' src="./img/opm.png" alt="" srcSet="" />
             <img className='company-logo' src="./img/unhcr.png" alt="" srcSet="" />
             <img className='company-logo' src="./img/NBRB-logo.png" alt="" srcSet="" />
-            <img className='company-logo' src="./img/rea.jfif" alt="" srcSet="" />
+            <img className='company-logo' src="./img/ndiwa.png" alt="" srcSet="" />
         </div>
     </div>
   )

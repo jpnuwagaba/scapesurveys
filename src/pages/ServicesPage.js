@@ -1,17 +1,18 @@
 import React from 'react'
 import Services from '../components/Services'
-import LandingInstance from '../components/LandingInstance'
 import TextSection from '../components/TextSection'
+import {Helmet} from 'react-helmet'
 import PageHeader from '../components/PageHeader'
 
 
 const ServicesPage = () => {
-  const documentHeading = document.getElementById('documentHeading')
-  documentHeading.innerHTML = 'Services | Scapes & Surveys'
-
 
   return (
     <div>
+      <Helmet>
+        <title>Services | Scapes & Surveys</title>
+        <meta name='description' content='Scapes and Surveys is a land survey firm based in Kampala Uganda' />
+      </Helmet>
       <PageHeader
         pageHeading='Our Services'
         briefDesc='We have full competency in cadastral surveys, engineering surveys, land development services, GIS consulting, UAV Lidar Scanning & Aerial Mapping, 3D laser scanning and Utiliy Mapping.'

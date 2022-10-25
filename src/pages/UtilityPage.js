@@ -5,6 +5,7 @@ import FetchingTextSection from '../components/FetchingTextSection'
 import PageHeader from '../components/PageHeader'
 import sanityClient from '../Client'
 import imageUrlBuilder from '@sanity/image-url'
+import {Helmet} from 'react-helmet'
 
 
 const builder = imageUrlBuilder(sanityClient)
@@ -14,7 +15,7 @@ function urlFor(source) {
 
 
 const UtilityPage = () => {
-  
+
   const [singleProject, setSingleProject] = useState(null)
   const { slug } = useParams()
 
@@ -31,14 +32,15 @@ const UtilityPage = () => {
       .catch(console.error)
   }, [slug])
 
-  if (!singleProject) return <h1 style={{margin: '30vh auto', color: '#2b388f'}} className='container'>Loading...</h1>
-
-  const documentHeading = document.getElementById('documentHeading')
-  documentHeading.innerHTML = `${singleProject.name} | Scapes & Surveys`
+  if (!singleProject) return <h1 style={{ margin: '30vh auto', color: '#2b388f' }} className='container'>Loading...</h1>
 
   return (
     <>
       <div>
+      <Helmet>
+        <title>{`${singleProject.name} | Scapes & Surveys`}</title>
+        <meta name='description' content='Scapes and Surveys is a land survey firm based in Kampala Uganda' />
+      </Helmet>
         <PageHeader
           pageHeading={singleProject && singleProject.name}
         />
@@ -48,7 +50,7 @@ const UtilityPage = () => {
           img={singleProject && singleProject.imageUrl}
         />
       </div>
- 
+
     </>
   )
 }
