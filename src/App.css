@@ -139,6 +139,7 @@ h3 {
 
 .info-section-right {
   height: auto;
+  background: #eee;
 }
 
 .info-section-left {
@@ -381,7 +382,7 @@ h3 {
 }
 
 .company-logo {
-  height: 60px;
+  height: 50px;
   margin: 0 25px;
 }
 
@@ -792,7 +793,8 @@ footer {
   }
 
   .company-logo {
-    height: 50px;
+    margin: 0.5rem 25px;
+    height: 40px;
   }
 
   .services {
@@ -900,7 +902,6 @@ footer {
 
   .company-logo {
     height: 38px;
-    margin: 0.5rem 25px;
   }
 
   .services-grid {

@@ -11,6 +11,7 @@ const ClientSection = () => {
             <img className='company-logo' src="./img/unhcr.png" alt="" srcSet="" />
             <img className='company-logo' src="./img/NBRB-logo.png" alt="" srcSet="" />
             <img className='company-logo' src="./img/ndiwa.png" alt="" srcSet="" />
+            <img className='company-logo' src="./img/konoike.png" alt="" srcSet="" />
         </div>
     </div>
   )

@@ -18,38 +18,38 @@ const Projects = () => {
       slug,
       "imageUrl": image.asset->url,
     }`)
-      .then((data) => setProject(data.slice(0,4)))
+      .then((data) => setProject(data.slice(0, 4)))
       .catch(console.error)
   }, [])
 
 
   return (
     <div className='projects'>
-      <InfoSection 
-            InfoSectionHeading='Torit Airport - South Sudan'
-            InfoSectionDetails='The new Torit land mark is to kick start with high end survey solutions brought to life by the latest survey techniques.'
-            InfoSectionLinkName='See Project Details'
-            img='energy.jpg'
-            link='projects'
-        />
+      <InfoSection
+        InfoSectionHeading='Improvement of Traffic Control in Kampala City'
+        InfoSectionDetails='The new Torit land mark is to kick start with high end survey solutions brought to life by the latest survey techniques.'
+        InfoSectionLinkName='See Project Details'
+        img='surveyors-on-the-road.jpeg'
+        link='projects'
+      />
       <div className="container">
-      <div className='projects-container'>
-        {projectData && projectData.map((project, index) => (
-          <Link to={`/projects/${project.slug.current}`} key={project.slug.current}>         
-            <div key={index}>
-              <Project
-                projectServiceCategory={project.category}
-                projectName={project.name}
-                projectDate={project.date}
-                img={project.imageUrl}
-              />
-            </div>
-          </Link>
-        ))}
-        <div>
-          <Link to="/projects"><button className="projects-btn btn blue-btn">SEE MORE</button></Link>
+        <div className='projects-container'>
+          {projectData && projectData.map((project, index) => (
+            <Link to={`/projects/${project.slug.current}`} key={project.slug.current}>
+              <div key={index}>
+                <Project
+                  projectServiceCategory={project.category}
+                  projectName={project.name}
+                  projectDate={project.date}
+                  img={project.imageUrl}
+                />
+              </div>
+            </Link>
+          ))}
+          <div>
+            <Link to="/projects"><button className="projects-btn btn blue-btn">SEE MORE</button></Link>
+          </div>
         </div>
-      </div>
       </div>
     </div>
   )
