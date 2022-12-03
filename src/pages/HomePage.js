@@ -7,6 +7,7 @@ import Services from '../components/Services'
 import LandingInstance from '../components/LandingInstance'
 import BlueHeading from '../components/BlueHeading'
 import { Helmet } from 'react-helmet'
+import Pdf from '../Documents/Scapes & Surveys Associates Company Brochure.pdf'
 
 
 const HomePage = () => {
@@ -22,7 +23,8 @@ const HomePage = () => {
         bgImg='surveyor-img.jpg'
         preHeader='Consistent & Accurate'
         landingCaptionHeader='Best Solutions for your Surveys'
-        InfoSectionLinkName='See Company Brochure'
+        InfoSectionLinkName='See Company Brochure' 
+        link={Pdf}
         landingDescription='We are one of the leading land survey firms in Uganda and we have all competencies of Geomatics and Land Management. Ready to deliver the quality of service you deserve.'
       />
       <InfoSection

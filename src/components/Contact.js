@@ -1,6 +1,6 @@
 import React from 'react'
 import Map from '../components/Map'
-import Logo from '../Logo'
+import Logo from './Logo'
 
 
 const Contact = () => {
