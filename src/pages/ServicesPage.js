@@ -15,8 +15,6 @@ const ServicesPage = () => {
       </Helmet>
       <PageHeader
         pageHeading='Our Services'
-        briefDesc='We have full competency in cadastral surveys, engineering surveys, land development services, GIS consulting, UAV Lidar Scanning & Aerial Mapping, 3D laser scanning and Utiliy Mapping.'
-        img='landing-img1.jpg'
       />
       <Services />
       <TextSection

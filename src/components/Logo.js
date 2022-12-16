@@ -7,6 +7,7 @@ const Logo = () => {
     <div className='logo'>
       <Link to="/">
         <img className='navbar-logo' src="./img/logo.png" alt="Scapes & Surveys" />
+        {/* <h1>SCAPES AND SURVEYS</h1> */}
       </Link>
     </div>
   )

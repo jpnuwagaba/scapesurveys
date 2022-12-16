@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import sanityClient from '../Client'
 import React from 'react'
 import Project from '../components/Project'
-import {Helmet} from 'react-helmet'
+import { Helmet } from 'react-helmet'
 import { Link } from 'react-router-dom'
 import PageHeader from '../components/PageHeader'
 
@@ -24,16 +24,16 @@ const ProjectsPage = () => {
       .catch(console.error)
   }, [])
 
-  if (!projectData) return <h1 style={{margin: '30vh auto', color: '#2b388f'}} className='container'>Loading...</h1>
+  if (!projectData) return <h1 style={{ margin: '30vh auto', color: '#2b388f' }} className='container'>Loading...</h1>
 
 
   return (
     <>
-    <Helmet>
+      <Helmet>
         <title>Projects | Scapes & Surveys</title>
         <meta name='description' content='Scapes and Surveys is a land survey firm based in Kampala Uganda' />
       </Helmet>
-      <PageHeader 
+      <PageHeader
         pageHeading='Projects'
       />
       <div className='projects container'>
@@ -49,7 +49,7 @@ const ProjectsPage = () => {
                 />
               </div>
             </Link>
-          ))}          
+          ))}
         </div>
       </div>
     </>

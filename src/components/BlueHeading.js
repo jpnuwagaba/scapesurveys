@@ -3,7 +3,7 @@ import React from 'react'
 const BlueHeading = (props) => {
   return (
     <div className='blue-heading container'>
-        <h2 style={{color: '#2b388f'}}>{props.heading}</h2>
+        <h1 style={{color: '#2b388f'}}>{props.heading}</h1>
     </div>
   )
 }

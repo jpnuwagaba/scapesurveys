@@ -4,33 +4,33 @@ import Corevalue from './Corevalue'
 const Corevalues = () => {
   return (
     <>
-      <div className="container core-values">
+      <div className="core-values">
         <div>
           <Corevalue
             img='./img/handshake1.png'
             corevalue='Integrity'
-            corevalueDesc='Delivering the right services the right way through character and honesty'
+            corevalueDesc='Service delivery, character and honesty'
           />
         </div>
         <div>
           <Corevalue
             img='./img/managers.png'
             corevalue='Professionalism'
-            corevalueDesc='Communicating effectively and appropriately and always finding a way to be productive.'
+            corevalueDesc='Effective communication and productivity'
           />
         </div>
         <div>
           <Corevalue
             img='./img/quality.png'
             corevalue='Quality'
-            corevalueDesc='Using reliable data and technologies to ensure excellence in service delivery.'
+            corevalueDesc='Fast data, technology and Excellence'
           />
         </div>
         <div>
           <Corevalue
             img='./img/landing-icons/mapping (2).png'
             corevalue='Experience'
-            corevalueDesc='Our industry age of 10 years and still counting guarantees the best workmanship from us.'
+            corevalueDesc='10 years of workmanship - guaranteed success.'
           />
         </div>
       </div>
