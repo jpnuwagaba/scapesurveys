@@ -6,7 +6,7 @@ const FetchingTextSection = (props) => {
       <div className="text-section-grid">
       <div style={{ backgroundImage: `url(${props.img}`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover', backgroundPosition: 'center' }} className="text-section-img"></div>
         <div className="text-section-text">
-          <h2 className='text-section-head'>{props.textSectionHead}</h2>
+          {/* <h2 className='text-section-head'>{props.textSectionHead}</h2> */}
           <p>{props.textSectionDesc}</p>
           <div className="text-section-list">
             <div className="bold list-head">{props.listHead}</div>
