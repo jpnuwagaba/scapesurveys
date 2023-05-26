@@ -29,7 +29,7 @@ const Careers = () => {
             duration='Since May 2022'
         />
         <Career 
-            career='Internship Trainee'
+            career='Internships'
             careerImg='internship.png'
             workingHours='Full time'
             location='Kampala, Uganda'

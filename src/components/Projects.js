@@ -28,9 +28,9 @@ const Projects = () => {
       <InfoSection
         InfoSectionHeading='Improvement of Traffic Control in Kampala City'
         InfoSectionDetails='Kampala is being brought to order and traffic systems maintenance is one of the key aspects. See how our survey solutions are helping to make this dream a reality.'
-        InfoSectionLinkName='See all projects'
+        InfoSectionLinkName='See this project'
         img='surveyors-on-the-road.jpeg'
-        link='projects'
+        link='projects/improvement-of-traffic-control-in-kampala-city'
       />
       <div className="container">
         <div className='projects-container'>
