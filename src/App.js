@@ -15,6 +15,7 @@ import Nopage from './pages/Nopage'
 import ScrollToTop from './components/ScrollToTop';
 import UtilityPage from './pages/UtilityPage';
 import SingleServicePage from './pages/SingleServicePage';
+import AdminPage from './pages/AdminPage';
 
 
 function App() {
@@ -38,6 +39,9 @@ function App() {
             <Route path='/services' element={<ServicesPage />} />
             <Route path='/projects' element={<ProjectsPage />} />
             <Route path='/careers' element={<CareersPage />} />
+
+            {/* admin page */}
+            <Route path='/admin' element={<AdminPage />} />
 
 
             {/* single service page */}

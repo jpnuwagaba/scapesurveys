@@ -5,7 +5,7 @@ import Career from './Career'
 const Careers = () => {
   return (
     <div className='careers container'>
-        <h2>Current Opportunities</h2>
+        <h2 className='font-bold uppercase'>roles and positions</h2>
         <div className="careers-grid">
         <Career 
             career='Cadastral Surveyor'

@@ -4,7 +4,7 @@ const Career = (props) => {
   return (
     <div className='career'>
       <div className="career-text-side">
-        <h3>{props.career}</h3>
+        <h3 className='font-bold'>{props.career}</h3>
         <div className="separator"></div>
         <div className="career-grid">
           <div className="career-img"><img src={`./img/${props.careerImg}`} alt="" srcSet="" /></div>

@@ -6,7 +6,7 @@ const ClientSection = () => {
     <div className='container client-section'>
         {/* <GrayButton text={'TRUSTED BY'} /> */}
         <div className='bold'>TRUSTED BY</div>
-        <div className="company-logos">
+        <div className="company-logos flex flex-wrap">
             <img className='company-logo' src="./img/opm.png" alt="" srcSet="" />
             {/* <img className='company-logo' src="./img/unhcr.png" alt="" srcSet="" /> */}
             <img className='company-logo' src="./img/NBRB-logo.png" alt="" srcSet="" />

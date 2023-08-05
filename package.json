@@ -4,9 +4,13 @@
   "private": true,
   "dependencies": {
     "@formkit/auto-animate": "^1.0.0-beta.3",
+    "@fortawesome/fontawesome-svg-core": "^6.4.0",
+    "@fortawesome/free-regular-svg-icons": "^6.4.0",
+    "@fortawesome/free-solid-svg-icons": "^6.4.0",
+    "@fortawesome/react-fontawesome": "^0.2.0",
     "@googlemaps/react-wrapper": "^1.1.35",
     "@sanity/client": "^3.4.1",
-    "@sanity/core": "^2.35.0",
+    "@sanity/core": "^2.36.1",
     "@sanity/image-url": "^1.0.1",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
@@ -16,16 +20,18 @@
     "react-collapsible": "^2.10.0",
     "react-dom": "^18.2.0",
     "react-helmet": "^6.1.0",
+    "react-icons": "^4.10.1",
     "react-router": "^6.4.0",
     "react-router-dom": "^6.4.0",
-    "react-scripts": "5.0.1",
+    "react-scripts": "^5.0.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "start:sanity": "cd scapesurveys && sanity start"
   },
   "eslintConfig": {
     "extends": [
@@ -44,5 +50,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.3.2"
   }
 }

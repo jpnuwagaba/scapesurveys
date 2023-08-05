@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import sanityClient from '../Client'
 import React from 'react'
 import Service from './Service'
+import {AiOutlineLoading3Quarters} from 'react-icons/ai'
 // import imageUrlBuilder from '@sanity/image-url'
 
 
@@ -27,7 +28,9 @@ const Services = () => {
       .catch(console.error)
   }, [])
 
-  if (!serviceData) return <h1 style={{ margin: '30vh auto', color: '#2b388f' }} className='container'>Loading...</h1>
+  if (!serviceData) return <div style={{ color: '#2b388f' }} className='container flex flex-col items-center animate-spin py-24'>
+    <AiOutlineLoading3Quarters size={'2rem'}/>
+  </div>
 
 
   return (

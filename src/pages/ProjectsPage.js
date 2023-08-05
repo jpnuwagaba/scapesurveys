@@ -5,6 +5,7 @@ import Project from '../components/Project'
 import { Helmet } from 'react-helmet'
 import { Link } from 'react-router-dom'
 import PageHeader from '../components/PageHeader'
+import {AiOutlineLoading3Quarters} from 'react-icons/ai'
 
 
 const ProjectsPage = () => {
@@ -24,7 +25,9 @@ const ProjectsPage = () => {
       .catch(console.error)
   }, [])
 
-  if (!projectData) return <h1 style={{ margin: '30vh auto', color: '#2b388f' }} className='container'>Loading...</h1>
+  if (!projectData) return <div style={{ color: '#2b388f' }} className='container flex flex-col items-center animate-spin py-24'>
+  <AiOutlineLoading3Quarters size={'2rem'}/>
+</div>
 
 
   return (

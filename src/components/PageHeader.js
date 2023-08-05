@@ -5,7 +5,7 @@ const PageHeader = (props) => {
     <div className='page-header container'>
       <div className="page-header-inner">
         <div className='page-heading'>
-          <h1>{props.pageHeading}</h1>
+          <h1 className='font-bold'>{props.pageHeading}</h1>
         </div>
         <div className='page-brief-desc'>
           {/* <p>{props.briefDesc}</p> */}

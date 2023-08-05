@@ -13,8 +13,8 @@ const LandingInstance = (props) => {
     <div style={ {backgroundImage: `url(../img/${props.bgImg})`, backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundSize: 'cover'} } className="landing">
       <div className='landing-inner'>
         <div className="container landing-caption">
-          <h3>{props.preHeader}</h3>
-          <h1>{props.landingCaptionHeader}</h1>
+          <h3 className='font-bold'>{props.preHeader}</h3>
+          <h1 className='font-bold'>{props.landingCaptionHeader}</h1>
           <p>{props.landingDescription}</p>
           <div className="link info-section-link-name bold">
             <a className='link' href={props.link} target='_blank'>
