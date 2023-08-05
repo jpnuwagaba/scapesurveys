@@ -6,7 +6,7 @@ const Team = () => {
   return (
     <div className='team'>
       <div className='mb-8'><BlueHeading heading='Our Core team' /></div>
-      <div className='container grid grid-cols-4 gap-8'>
+      <div className='container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8'>
         <TeamMember
           name='Arthur Akanga'
           img='arthur2.jpg'
