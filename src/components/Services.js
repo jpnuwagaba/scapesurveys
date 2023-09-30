@@ -35,7 +35,7 @@ const Services = () => {
 
   return (
     <div className='container'>
-      <div className="services">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {
           serviceData && serviceData.map((thisService, index) => (
             <Link to={`/services/${thisService.slug.current}`} key={thisService.slug.current}>
