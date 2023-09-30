@@ -17,7 +17,7 @@ const Team = () => {
         <TeamMember name="Akram Sseruwuge" img="akram.jpg" position="Surveyor" />
         <TeamMember name="Maxwell Bariyo" img="maxwell.jpg" position="Surveyor" />
         <TeamMember name="Mariam Bruce Nalujja" img="nalujja.jpg" position="Surveyor"/>
-        <TeamMember name="Tevin Katerega" img="tevin.jpg" position="Surveyor" />
+        <TeamMember name="Tevin Herbert Katerega" img="tevin.jpg" position="Surveyor" />
         <TeamMember name="Paul Joshua Ogwal" img="pajosh.jpg" position="Surveyor"/>
       </div>
     </div>
